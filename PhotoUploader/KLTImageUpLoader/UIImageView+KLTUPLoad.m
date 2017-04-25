@@ -25,7 +25,7 @@ static char key;
 }
 
 
-- (KLTImageUPLoader *)uploadSingleImageWithUrl:(NSString *)url Prarmeters:(NSDictionary *)parameters Completion:(void (^)(NSData * data))completion
+- (KLTImageUPLoader *)uploadSingleImageWithUrl:(NSString *)url Prarmeters:(NSDictionary *)parameters Completion:(void (^)(NSData * data,UIImageView * imageView))completion
 {
 //    for (UIView * subView in  self.subviews) {
 //        if ([subView isKindOfClass:[KLTUPLoadMaskView class]]) {
@@ -65,7 +65,7 @@ static char key;
                     [maskView removeFromSuperview];
                 }
                 if (completion) {
-                    completion(data);
+                    completion(data,weakself);
                 }
             }
             else{
