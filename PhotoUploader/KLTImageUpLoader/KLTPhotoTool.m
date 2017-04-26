@@ -135,7 +135,7 @@
 
 - (void)imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary<NSString *,id> *)info
 {
-   __block UIImage *img = [info objectForKey:UIImagePickerControllerOriginalImage];
+      __block UIImage *img = self.allowEditing? [info objectForKey:UIImagePickerControllerEditedImage]:[info objectForKey:UIImagePickerControllerOriginalImage];
     
     [picker dismissViewControllerAnimated:YES completion:^{
         if (self.completion) {
