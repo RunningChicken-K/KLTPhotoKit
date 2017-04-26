@@ -14,6 +14,9 @@
 
 @property(nonatomic,copy)NSDictionary * parameters;
 
+@property(nonatomic,copy)NSString * fileName;
+
+
 /**
  图片获取工具   通过photo.sourceType等对图片获取或剪裁进行设置
  */

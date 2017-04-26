@@ -156,8 +156,10 @@ dispatch_async(dispatch_get_main_queue(), block);\
 {
     //5.拼接数据
     KLTRequestFormData *formData = [[KLTRequestFormData alloc]init];
-    
-    [formData appendFileData:data Name:@"pic"];
+    if (!_fileName) {
+        NSLog(@"没有fileName！");
+    }
+    [formData appendFileData:data Name:self.fileName];
     for (id key in parameters.allKeys) {
         [formData appendBinaryData:[parameters valueForKey:key]  Name:(NSString *)key];
     }

@@ -25,7 +25,7 @@ static char key;
 }
 
 
-- (KLTImageUPLoader *)uploadSingleImageWithUrl:(NSString *)url Prarmeters:(NSDictionary *)parameters Completion:(void (^)(NSData * data,UIImageView * imageView))completion
+- (KLTImageUPLoader *)uploadSingleImageWithUrl:(NSString *)url FileName:(NSString *)fileName Prarmeters:(NSDictionary *)parameters Completion:(void (^)(NSData * data,UIImageView * imageView))completion
 {
 //    for (UIView * subView in  self.subviews) {
 //        if ([subView isKindOfClass:[KLTUPLoadMaskView class]]) {
@@ -84,6 +84,7 @@ static char key;
     }
     self.upLoader.url = url;
     self.upLoader.parameters = parameters;
+    self.upLoader.fileName = fileName;
    
     
     //[self.upLoader uploadImageWithUrl:url Prarmaters:parameters];

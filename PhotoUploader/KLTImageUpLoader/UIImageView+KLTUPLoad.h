@@ -19,7 +19,7 @@
 /**
  获取单张图片并把相应参数和图片上传到指定URL
  */
--  (KLTImageUPLoader *)uploadSingleImageWithUrl:(NSString *)url Prarmeters:(NSDictionary *)parameters Completion:(void (^)(NSData * data,UIImageView * imageView))completion;
+-  (KLTImageUPLoader *)uploadSingleImageWithUrl:(NSString *)url FileName:(NSString *)fileName Prarmeters:(NSDictionary *)parameters Completion:(void (^)(NSData * data,UIImageView * imageView))completion;
 
 
 @end
