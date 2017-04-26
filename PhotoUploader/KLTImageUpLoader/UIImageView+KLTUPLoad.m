@@ -46,7 +46,7 @@ static char key;
         } Progress:^(CGFloat progress) {
             
             if (progress >= 1) {
-                [maskView removeFromSuperview];
+                maskView.progress = @"99.99%";
             }
             else
             {
