@@ -7,16 +7,24 @@
 //
 
 #import "AppDelegate.h"
-
+#import "FPSLabel.h"
 @interface AppDelegate ()
 
 @end
 
 @implementation AppDelegate
 
-
+#define ScreenWidth [UIScreen mainScreen].bounds.size.width
+#define ScreenHeight [UIScreen mainScreen].bounds.size.height
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    
+    
+    UIView * rootView = self.window.rootViewController.view;
+    FPSLabel * fpsLabel = [FPSLabel FPSLabelWithPosition:CGPointMake(0, 0)];
+    fpsLabel.center = CGPointMake(ScreenWidth/2, ScreenHeight/2);
+    [rootView addSubview:fpsLabel];
+    
     return YES;
 }
 

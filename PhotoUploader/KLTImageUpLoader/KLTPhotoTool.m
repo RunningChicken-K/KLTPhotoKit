@@ -67,7 +67,7 @@
     
     UIViewController * currentVC = [self currentViewController];
     
-//#ifdef __IPHONE_8_0
+#ifdef __IPHONE_8_0
     
     
     UIAlertController * alert = [UIAlertController alertControllerWithTitle:self.alertTitle message:self.alertMessage preferredStyle:UIAlertControllerStyleActionSheet];
@@ -84,13 +84,13 @@
         [self obtainPhotoFromCamera];
     }]];
     [currentVC presentViewController:alert animated:YES completion:nil];
-//#else
-//    UIActionSheet * sheet = [[UIActionSheet alloc]initWithTitle:self.alertTitle delegate:self cancelButtonTitle:@"取消" destructiveButtonTitle:nil otherButtonTitles:nil];
-//    [sheet addButtonWithTitle:@"相册"];
-//    [sheet addButtonWithTitle:@"相机"];
-//    [sheet showInView:currentVC.view];
-//
-//#endif
+#else
+    UIActionSheet * sheet = [[UIActionSheet alloc]initWithTitle:self.alertTitle delegate:self cancelButtonTitle:@"取消" destructiveButtonTitle:nil otherButtonTitles:nil];
+    [sheet addButtonWithTitle:@"相册"];
+    [sheet addButtonWithTitle:@"相机"];
+    [sheet showInView:currentVC.view];
+
+#endif
     
     
 

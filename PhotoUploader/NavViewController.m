@@ -1,26 +1,22 @@
 //
-//  IndexViewController.m
+//  NavViewController.m
 //  PhotoUploader
 //
-//  Created by 孔令涛 on 2017/4/24.
+//  Created by 孔令涛 on 2017/5/4.
 //  Copyright © 2017年 KongLT. All rights reserved.
 //
 
-#import "IndexViewController.h"
-#import "KLTAlbumPhotoList.h"
-@interface IndexViewController ()
+#import "NavViewController.h"
+
+@interface NavViewController ()
 
 @end
 
-@implementation IndexViewController
+@implementation NavViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    
-    self.title = @"KLTImageUploader";
-    
-    
 }
 - (UIStatusBarStyle)preferredStatusBarStyle
 {
@@ -29,15 +25,6 @@
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
-}
-
-- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    if (indexPath.row == 1) {
-        KLTAlbumPhotoList * kap = [[KLTAlbumPhotoList alloc]init];
-        
-        [self.navigationController pushViewController:kap animated:YES];
-    }
 }
 
 /*
