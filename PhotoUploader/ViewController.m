@@ -7,7 +7,7 @@
 //
 
 #import "ViewController.h"
-#import "KLTPhotoTool.h"
+#import "KLTSinglePhotoPicker.h"
 #import "UIImageView+KLTUPLoad.h"
 #import "KLTImageUPLoader.h"
 

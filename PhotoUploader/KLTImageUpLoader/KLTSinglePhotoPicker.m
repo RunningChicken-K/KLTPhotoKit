@@ -6,10 +6,10 @@
 //  Copyright © 2017年 cz10000. All rights reserved.
 //
 
-#import "KLTPhotoTool.h"
+#import "KLTSinglePhotoPicker.h"
 
 
-@interface KLTPhotoTool()<UINavigationControllerDelegate,UIImagePickerControllerDelegate,UIActionSheetDelegate>
+@interface KLTSinglePhotoPicker()<UINavigationControllerDelegate,UIImagePickerControllerDelegate,UIActionSheetDelegate>
 
 @property(nonatomic,strong)void (^completion)(UIImage * image);
 
@@ -17,10 +17,10 @@
 
 @end
 
-@implementation KLTPhotoTool
+@implementation KLTSinglePhotoPicker
 + (instancetype)photoTool
 {
-    return [[KLTPhotoTool alloc]init];
+    return [[KLTSinglePhotoPicker alloc]init];
 }
 
 
@@ -31,6 +31,8 @@
         self.allowEditing = YES;
 //        self.alertTitle = @"选择照片来源";
 //        self.alertMessage = @"选择照片来源";
+        
+        
     }
     return self;
 }
@@ -101,6 +103,9 @@
  */
 - (void)obtainPhotoFromAlbum
 {
+    
+    //手动 retain  防止提前释放
+    CFRetain((__bridge CFTypeRef)(self));
     UIViewController * currentVC = [self currentViewController];
     UIImagePickerController *imagePicker = [[UIImagePickerController alloc] init];
     imagePicker.delegate = self;
@@ -113,6 +118,8 @@
  */
 - (void)obtainPhotoFromCamera
 {
+    //手动retain 防止提前释放
+    CFRetain((__bridge CFTypeRef)(self));
     UIViewController * currentVC = [self currentViewController];
     UIImagePickerController *imagePicker = [[UIImagePickerController alloc] init];
     imagePicker.delegate = self;
@@ -126,6 +133,8 @@
 
 - (void)imagePickerControllerDidCancel:(UIImagePickerController *)picker
 {
+    //前面手动retain 这里手动release
+    CFRelease((__bridge CFTypeRef)(self));
     [picker dismissViewControllerAnimated:YES completion:^{
         [self.delegate didCancelPickImage];
     }];
@@ -135,6 +144,8 @@
 
 - (void)imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary<NSString *,id> *)info
 {
+    //前面手动retain  这里手动release
+    CFRelease((__bridge CFTypeRef)(self));
       __block UIImage *img = self.allowEditing? [info objectForKey:UIImagePickerControllerEditedImage]:[info objectForKey:UIImagePickerControllerOriginalImage];
     
     [picker dismissViewControllerAnimated:YES completion:^{
@@ -220,7 +231,7 @@
 
 - (void)dealloc
 {
-    NSLog(@"photo被释放掉了");
+    NSLog(@"PhotoTool被释放掉了");
 }
 
 @end

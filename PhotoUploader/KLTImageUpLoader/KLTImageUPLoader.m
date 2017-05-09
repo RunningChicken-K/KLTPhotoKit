@@ -15,7 +15,21 @@
 
 
 
-@interface KLTImageUPLoader ()<NSURLSessionDelegate,NSURLSessionDataDelegate,KLTPhotoDelegate>
+@interface KLTImageUPLoader ()<NSURLSessionDelegate,NSURLSessionDataDelegate,KLTSinglePhotoPickerDelegate>
+
+/**
+ 更新进度时的回调
+ */
+@property(nonatomic,strong)void (^progress)(CGFloat progress);
+/**
+ 使用相机或者相册获取到图片后的回调
+ */
+@property(nonatomic,strong)void (^didSelectImage)(UIImage * image);
+/**
+ 上传完成后的回调方法
+ */
+@property(nonatomic,strong)void (^completionHandler)(NSData *  data, NSError * error);
+
 
 @property(nonatomic,strong)NSURLSession * session;
 
@@ -37,10 +51,10 @@
     return uploader;
 }
 
-- (KLTPhotoTool *)photoTool
+- (KLTSinglePhotoPicker *)photoTool
 {
     if (_photoTool == nil) {
-        _photoTool = [KLTPhotoTool photoTool];
+        _photoTool = [KLTSinglePhotoPicker photoTool];
         _photoTool.delegate = self;
     }
     return _photoTool;

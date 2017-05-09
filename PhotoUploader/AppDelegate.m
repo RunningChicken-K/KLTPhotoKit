@@ -20,10 +20,10 @@
     // Override point for customization after application launch.
     
     
-    UIView * rootView = self.window.rootViewController.view;
-    FPSLabel * fpsLabel = [FPSLabel FPSLabelWithPosition:CGPointMake(0, 0)];
-    fpsLabel.center = CGPointMake(ScreenWidth/2, ScreenHeight/2);
-    [rootView addSubview:fpsLabel];
+//    UIView * rootView = self.window.rootViewController.view;
+//    FPSLabel * fpsLabel = [FPSLabel FPSLabelWithPosition:CGPointMake(0, 0)];
+//    fpsLabel.center = CGPointMake(ScreenWidth/2, ScreenHeight/2);
+//    [rootView addSubview:fpsLabel];
     
     return YES;
 }

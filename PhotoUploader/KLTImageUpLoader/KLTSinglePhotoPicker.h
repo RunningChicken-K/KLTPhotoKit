@@ -6,7 +6,6 @@
 //  Copyright © 2017年 cz10000. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
 
 
@@ -18,16 +17,16 @@ typedef NS_ENUM(NSInteger,PhotoSource) {
     
 };
 
-@protocol KLTPhotoDelegate <NSObject>
+@protocol KLTSinglePhotoPickerDelegate <NSObject>
 @required
 - (void)didCancelPickImage;
 
 @end
 
-@interface KLTPhotoTool : NSObject
+@interface KLTSinglePhotoPicker : NSObject
 
 
-@property(nonatomic,weak)id<KLTPhotoDelegate> delegate;
+@property(nonatomic,weak)id<KLTSinglePhotoPickerDelegate> delegate;
 
 
 /**
@@ -57,6 +56,9 @@ typedef NS_ENUM(NSInteger,PhotoSource) {
  压缩比率  默认不对图片做压缩处理    如果设置此参数  则会将图片转化为JPG格式  并按照给定的压缩比率进行压缩
  */
 @property(nonatomic,assign)CGFloat  CompressRate;
+
+
+
 
 + (instancetype)photoTool;
 
