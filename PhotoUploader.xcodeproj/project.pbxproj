@@ -39,6 +39,7 @@
 /* Begin PBXFileReference section */
 		3BF3E077091B97766C8FA9D3 /* Pods-PhotoUploader.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PhotoUploader.release.xcconfig"; path = "Pods/Target Support Files/Pods-PhotoUploader/Pods-PhotoUploader.release.xcconfig"; sourceTree = "<group>"; };
 		5348216A673D1D93E2A5942A /* libPods-PhotoUploader.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-PhotoUploader.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6A32D2751ECC3C790045618F /* FilterReference.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FilterReference.h; sourceTree = "<group>"; };
 		6A55A43F1E9CD39D00D8CF31 /* NSArray+Log.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+Log.h"; sourceTree = "<group>"; };
 		6A55A4401E9CD39D00D8CF31 /* NSArray+Log.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+Log.m"; sourceTree = "<group>"; };
 		6A5D481D1EB9B58200A3F15D /* KLTImageUploaderDefine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KLTImageUploaderDefine.h; sourceTree = "<group>"; };
@@ -139,6 +140,7 @@
 				6A5D48201EB9B80F00A3F15D /* KLTAssetCell.xib */,
 				6A5D48541EBC5AEC00A3F15D /* KLTPhotoNavController.h */,
 				6A5D48551EBC5AEC00A3F15D /* KLTPhotoNavController.m */,
+				6A32D2751ECC3C790045618F /* FilterReference.h */,
 				6A5D485A1EC0720E00A3F15D /* KLTFilter.h */,
 				6A5D485B1EC0720E00A3F15D /* KLTFilter.m */,
 			);

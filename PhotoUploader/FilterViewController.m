@@ -142,7 +142,6 @@
 
 - (IBAction)render:(id)sender {
     
-    
     dispatch_async(dispatch_queue_create("queue", NULL), ^{
         CIFilter * filter = [CIFilter filterWithName:_currentFilterName];
         CGImageRef  cgimage = [_originalImage CGImage];
@@ -150,24 +149,33 @@
         
         [filter setValue:ciimage forKey:kCIInputImageKey];
         //[filter setValue:@0.8f forKey:kCIInputIntensityKey];
+        
+        CIImage * backImg = [CIImage imageWithCGImage:[[UIImage imageNamed:@"photo.jpg"] CGImage]];
+        //[filter setValue:backImg forKey:kCIInputBackgroundImageKey];
+        CIVector * vector = [CIVector vectorWithCGRect:CGRectMake(100, 100, 200, 200)];
+        [filter setValue:vector forKey:kCIInputExtentKey];
+        
         NSLog(@"%@",[filter attributes]);
         
         CIImage * result = [filter valueForKey:kCIOutputImageKey];
+        
+
     
         
         //CIContext * context = [CIContext contextWithOptions:nil];
         //NSLog(@"%@",NSStringFromCGRect([result extent]));
         //NSLog(@"%@",NSStringFromCGSize(originalImage.size));
-        CGRect extent = CGRectMake(0, 0, _originalImage.size.width, _originalImage.size.height); //[result extent];
+        CGRect extent = CGRectMake(0, 0, 1, 1); //[result extent];
         CGImageRef cgres = [self.context createCGImage:result fromRect:extent];
         //NSLog(@"%@",[NSThread currentThread]);
         dispatch_main_sync_safe(^{
-            NSLog(@"%@",[NSThread currentThread]);
+            //NSLog(@"%@",[NSThread currentThread]);
+            UIImage * resultImage = [UIImage imageWithCGImage:cgres];
+            NSLog(@"%@",resultImage);
             self.transitionImageView.image = [UIImage imageWithCGImage:cgres];
         });
     });
     
-    kCIAttributeTypeScalar
 }
 
 
