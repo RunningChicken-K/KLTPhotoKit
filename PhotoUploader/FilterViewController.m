@@ -153,7 +153,7 @@
         CIImage * backImg = [CIImage imageWithCGImage:[[UIImage imageNamed:@"photo.jpg"] CGImage]];
         //[filter setValue:backImg forKey:kCIInputBackgroundImageKey];
         CIVector * vector = [CIVector vectorWithCGRect:CGRectMake(100, 100, 200, 200)];
-        [filter setValue:vector forKey:kCIInputExtentKey];
+        //[filter setValue:vector forKey:kCIInputExtentKey];
         
         NSLog(@"%@",[filter attributes]);
         
@@ -165,7 +165,7 @@
         //CIContext * context = [CIContext contextWithOptions:nil];
         //NSLog(@"%@",NSStringFromCGRect([result extent]));
         //NSLog(@"%@",NSStringFromCGSize(originalImage.size));
-        CGRect extent = CGRectMake(0, 0, 1, 1); //[result extent];
+        CGRect extent = [result extent];
         CGImageRef cgres = [self.context createCGImage:result fromRect:extent];
         //NSLog(@"%@",[NSThread currentThread]);
         dispatch_main_sync_safe(^{

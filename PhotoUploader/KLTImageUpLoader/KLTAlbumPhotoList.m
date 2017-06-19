@@ -181,6 +181,12 @@ static CGFloat BottomViewHieght = 40;
     
     KLTImageBrowserController * kvc = [[KLTImageBrowserController alloc]init];
     kvc.assetsArray = previewArray;
+    __weak typeof(self) weakself = self;
+    [kvc setWillPop:^(NSMutableArray * increAssets){
+        [weakself.assetsArray addObjectsFromArray:increAssets];
+        [weakself.collectionView reloadData];
+        
+    }];
     [self.navigationController pushViewController:kvc animated:YES];
     
 }
@@ -234,6 +240,8 @@ static CGFloat BottomViewHieght = 40;
                         if (self.didSelectImages) {
                             self.didSelectImages(imageArray);
                         }
+                        [self.navigationController dismissViewControllerAnimated:YES completion:nil];
+
                     }
                 }
                 

@@ -8,6 +8,7 @@
 
 #import "KLTImageBrowserController.h"
 #import "KLTImageUploaderDefine.h"
+#import "KLTEditImageViewController.h"
 #import "KLTAsset.h"
 
 
@@ -22,6 +23,10 @@
  
 @property(nonatomic,assign)NSInteger numberOfPage;
 
+@property(nonatomic,strong)NSMutableArray * imageViewArray;
+//记录编辑完成后保存的新图片对应的assets  用来刷新相册列表
+@property(nonatomic,strong)NSMutableArray * increaseAssetArray;
+
 @end
 
 @implementation KLTImageBrowserController
@@ -33,26 +38,64 @@
     self.view.backgroundColor = [UIColor blackColor];
     self.title = @"预览";
     
-    [self.navigationController setNavigationBarHidden:YES animated:YES];
+    //[self.navigationController setNavigationBarHidden:YES animated:YES];
     
     UIButton * leftBtn = [UIButton buttonWithType:UIButtonTypeSystem];
     leftBtn.frame = CGRectMake(0, 0, 25,25);
     [leftBtn setBackgroundImage:[UIImage imageNamed:@"klt_back"] forState:UIControlStateNormal];
     [leftBtn addTarget:self action:@selector(leftBarBtnClicked:) forControlEvents:UIControlEventTouchUpInside];
     UIBarButtonItem * leftBarBtn = [[UIBarButtonItem alloc]initWithCustomView:leftBtn];;
-
-    
     UIBarButtonItem * spaceItem = [[UIBarButtonItem alloc]initWithBarButtonSystemItem:UIBarButtonSystemItemFixedSpace target:nil action:nil];
     spaceItem.width = -15;
     self.navigationItem.leftBarButtonItems = @[spaceItem,leftBarBtn];
 
-
+    UIBarButtonItem * rightBarBtnItem = [[UIBarButtonItem alloc]initWithTitle:@"编辑" style:UIBarButtonItemStyleDone target:self action:@selector(editImage:)];
+    self.navigationItem.rightBarButtonItem = rightBarBtnItem;
     
     self.currentPage = self.currentPage +1;
     
     [self.view addSubview:self.baseScrollView];
     [self.view addSubview:self.pageCountLabel];
 }
+- (void)editImage:(UIBarButtonItem *)barBtn
+{
+    KLTEditImageViewController * kvc = [[KLTEditImageViewController alloc]init];
+    NSUInteger replaceIndex = (NSInteger)(self.baseScrollView.contentOffset.x / kScreenWidth);
+    
+    KLTAsset * asset = self.assetsArray[replaceIndex];
+    kvc.sourceAsset = asset;
+    kvc.replaceIndex = replaceIndex;
+    __weak __typeof(self) weakself = self;
+    [kvc setEditSuccess:^(NSUInteger replaceIndex, KLTAsset *asset) {
+        
+        if (asset) {
+            //保存新增asset
+            [weakself.increaseAssetArray addObject:asset];
+            [weakself.assetsArray replaceObjectAtIndex:replaceIndex withObject:asset];
+            
+            UIImageView * imageView = [weakself.imageViewArray objectAtIndex:replaceIndex];
+            [[PHImageManager defaultManager] requestImageForAsset:asset.asset targetSize:CGSizeMake(CGFLOAT_MAX, CGFLOAT_MAX) contentMode:PHImageContentModeDefault options:nil resultHandler:^(UIImage * _Nullable result, NSDictionary * _Nullable info) {
+                //NSLog(@"img.size is %@",NSStringFromCGSize(result.size));
+                imageView.image = result;
+                
+                CGFloat width = kScreenWidth;
+                CGFloat height = kScreenWidth / result.size.width * result.size.height;
+                
+                imageView.bounds = CGRectMake(0, 0, width, height);
+                if (height > ContentViewHeight) {
+                    imageView.center = CGPointMake(width/2, height/2);
+                }
+                else
+                {
+                    imageView.center = CGPointMake(kScreenWidth/2, (ContentViewHeight)/2);
+                }
+            }];
+        }
+        
+    }];
+    [self presentViewController:kvc animated:NO completion:nil];
+}
+
 - (void)viewWillDisappear:(BOOL)animated
 {
     [super viewWillDisappear:animated];
@@ -66,15 +109,33 @@
 }
 - (void)leftBarBtnClicked:(UIBarButtonItem *)btn
 {
+    
+    if (self.willPop) {
+        self.willPop(self.increaseAssetArray);
+    }
+    
     [self.navigationController popViewControllerAnimated:YES];
 }
-
+- (NSMutableArray *)increaseAssetArray
+{
+    if (_increaseAssetArray == nil) {
+        _increaseAssetArray = [[NSMutableArray alloc]init];
+    }
+    return _increaseAssetArray;
+}
+- (NSMutableArray *)imageViewArray
+{
+    if (_imageViewArray == nil) {
+        _imageViewArray = [[NSMutableArray alloc]init];
+    }
+    return _imageViewArray;
+}
 - (UIStatusBarStyle)preferredStatusBarStyle
 {
     return UIStatusBarStyleLightContent;
 }
 
-- (void)setAssetsArray:(NSArray *)assetsArray
+- (void)setAssetsArray:(NSMutableArray *)assetsArray
 {
     _assetsArray = assetsArray;
     NSInteger i = 0;
@@ -91,6 +152,7 @@
         
         
         UIImageView * imageView = [[UIImageView alloc]initWithFrame:CGRectMake(0, 0, kScreenWidth, kScreenWidth)];
+        [self.imageViewArray addObject:imageView];
         [contentScrollView addSubview:imageView];
         imageView.userInteractionEnabled = YES;
         
@@ -98,7 +160,7 @@
         
         PHImageManager * manager  = [PHImageManager defaultManager];
         [manager requestImageForAsset:asset.asset targetSize:CGSizeMake(CGFLOAT_MAX, CGFLOAT_MAX) contentMode:PHImageContentModeDefault options:nil resultHandler:^(UIImage * _Nullable result, NSDictionary * _Nullable info) {
-            NSLog(@"img.size is %@",NSStringFromCGSize(result.size));
+            //NSLog(@"img.size is %@",NSStringFromCGSize(result.size));
             imageView.image = result;
             
             CGFloat width = kScreenWidth;

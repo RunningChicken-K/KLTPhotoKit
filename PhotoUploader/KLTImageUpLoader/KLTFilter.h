@@ -8,10 +8,37 @@
 
 
 #import "FilterReference.h"
+#import <UIKit/UIKit.h>
 #import <CoreImage/CoreImage.h>
 
-@interface KLTFilter : CIFilter
+struct CubeMap {
+    int length;
+    float dimension;
+    float *data;
+};
+
+struct ColorControl {
+    float bri;
+    float con;
+    float sat;
+};
+
+@interface KLTFilter : NSObject
+
+@property(nonatomic,strong)UIImage * sourceImage;
 
 + (NSDictionary *)allFilter;
+
++ (instancetype)filterWithSourceImage:(UIImage *)sourceImage;
+
+- (void)setColorControlWithBrightness:(CGFloat)bri Contrast:(CGFloat)con Saturation:(CGFloat)sat;
+
+- (void)setColorCubeWithRed:(CGFloat)red Green:(CGFloat)green Blue:(CGFloat)blue;
+
+- (void)setEffectFilter:(NSString *)filter Parameters:(NSDictionary *)parameters;
+//输出图片
+- (void)render:(void(^)(UIImage * resultImage))completion;
+
+- (void)clearFilters;
 
 @end

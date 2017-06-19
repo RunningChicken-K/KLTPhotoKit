@@ -15,6 +15,8 @@
 #import <Foundation/Foundation.h>
 
 
+static NSString * kNoneEffect = @"";
+
 #pragma mark- CICategoryBlur  模糊相关滤镜
 static NSString * kCIBoxBlur = @"CIBoxBlur";//快速均值模糊
 static NSString * kCIDiscBlur = @"CIDiscBlur";//环形卷积模糊

@@ -25,8 +25,8 @@
 @property(nonatomic,strong)UIImage * HDImage;
 
 /**
- 向ImageManager请求图片资源的 RequestID,不再屏幕中显示的Requet会被取消
+ 向ImageManager请求图片资源的 RequestID,不在屏幕中显示的Requet会被取消
  */
-@property(nonatomic,assign)PHImageRequestID  requestID;
+//@property(nonatomic,assign)PHImageRequestID  requestID;
 
 @end

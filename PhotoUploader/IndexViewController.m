@@ -8,6 +8,8 @@
 
 #import "IndexViewController.h"
 #import "KLTAlbumPhotoList.h"
+
+
 @interface IndexViewController ()
 
 @end
@@ -18,7 +20,7 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
-    self.title = @"KLTImageUploader";
+    self.title = @"PhotoKit";
     
     
 }

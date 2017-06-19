@@ -11,9 +11,12 @@
 @interface KLTImageBrowserController : UIViewController
 
 
-@property(nonatomic,copy)NSArray * assetsArray;
+@property(nonatomic,copy)NSMutableArray * assetsArray;
 
 
 @property(nonatomic,assign)NSInteger  currentPage;
+
+@property(nonatomic,strong) void (^willPop)(NSMutableArray * increaseAssets);
+- (void)setWillPop:(void (^)(NSMutableArray * increaseAssets))willPop;
 
 @end
