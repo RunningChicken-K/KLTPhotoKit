@@ -60,6 +60,8 @@ static CGFloat BottomViewHieght = 40;
     if (self) {
         self.targetSize = CGSizeMake(CGFLOAT_MAX, CGFLOAT_MAX);
     }
+    
+    
     return self;
 }
 
@@ -69,6 +71,11 @@ static CGFloat BottomViewHieght = 40;
     
     [self.view addSubview:self.collectionView];
     [self.view addSubview:self.bottomView];
+    
+
+    
+    UIBarButtonItem * rightBarBtn = [[UIBarButtonItem alloc]initWithTitle:@"取消" style:UIBarButtonItemStyleDone target:self action:@selector(cancel:)];
+    self.navigationItem.rightBarButtonItem = rightBarBtn;
     
     //请求相册访问权限
     [PHPhotoLibrary requestAuthorization:^(PHAuthorizationStatus status) {
@@ -92,6 +99,14 @@ static CGFloat BottomViewHieght = 40;
  
     
 }
+
+- (void)cancel:(UIBarButtonItem *)barBtn
+{
+    [self.navigationController dismissViewControllerAnimated:YES completion:^{
+        
+    }];
+}
+
 - (void)loadAssetCollectionForDisplay
 {
     PHFetchOptions  * options = [[PHFetchOptions alloc]init];

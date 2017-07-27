@@ -36,7 +36,6 @@
     NSString * url = @"http://kfpet.cz10000.com/index.php?m=Czculture&a=addimg";
     NSDictionary * parameters = @{@"appid":@"2016",@"appselect":@"cz2016",@"userid":@"336",@"action":@"add"};
     
-    __weak __typeof(self) weakself = self;
     KLTImageUPLoader * uploader =  [_imagView uploadSingleImageWithUrl:url FileName:@"pic" Prarmeters:parameters Completion:^(NSData *data,UIImageView * imageView) {
         NSLog(@"上传成功");
         NSLog(@"%@",DictWithJsonData(data));

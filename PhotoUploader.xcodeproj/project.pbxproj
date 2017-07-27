@@ -138,21 +138,8 @@
 		53AEBB491F29C1A500B81D16 /* KLTPhotoKit */ = {
 			isa = PBXGroup;
 			children = (
-				53AEBB4A1F29C1A500B81D16 /* coloradjust_selected.png */,
-				53AEBB4B1F29C1A500B81D16 /* coloradjust_unselected.png */,
-				53AEBB4C1F29C1A500B81D16 /* contrast_selected.png */,
-				53AEBB4D1F29C1A500B81D16 /* contrast_unselected.png */,
-				53AEBB4E1F29C1A500B81D16 /* effect_selected.png */,
-				53AEBB4F1F29C1A500B81D16 /* effect_unselected.png */,
+				53AEBB971F29C54A00B81D16 /* Resoure */,
 				53AEBB501F29C1A500B81D16 /* FilterReference.h */,
-				53AEBB511F29C1A500B81D16 /* FPSLabel.h */,
-				53AEBB521F29C1A500B81D16 /* FPSLabel.m */,
-				53AEBB531F29C1A500B81D16 /* group_selected.png */,
-				53AEBB541F29C1A500B81D16 /* group_unselected.png */,
-				53AEBB551F29C1A500B81D16 /* klt_back@2x.png */,
-				53AEBB561F29C1A500B81D16 /* klt_check@2x.png */,
-				53AEBB571F29C1A500B81D16 /* klt_slider@2x.png */,
-				53AEBB581F29C1A500B81D16 /* klt_uncheck@2x.png */,
 				53AEBB591F29C1A500B81D16 /* KLTAlbumPhotoList.h */,
 				53AEBB5A1F29C1A500B81D16 /* KLTAlbumPhotoList.m */,
 				53AEBB5B1F29C1A500B81D16 /* KLTAsset.h */,
@@ -187,6 +174,27 @@
 				53AEBB781F29C1A500B81D16 /* UIImageView+KLTUPLoad.m */,
 			);
 			path = KLTPhotoKit;
+			sourceTree = "<group>";
+		};
+		53AEBB971F29C54A00B81D16 /* Resoure */ = {
+			isa = PBXGroup;
+			children = (
+				53AEBB511F29C1A500B81D16 /* FPSLabel.h */,
+				53AEBB521F29C1A500B81D16 /* FPSLabel.m */,
+				53AEBB531F29C1A500B81D16 /* group_selected.png */,
+				53AEBB541F29C1A500B81D16 /* group_unselected.png */,
+				53AEBB551F29C1A500B81D16 /* klt_back@2x.png */,
+				53AEBB561F29C1A500B81D16 /* klt_check@2x.png */,
+				53AEBB571F29C1A500B81D16 /* klt_slider@2x.png */,
+				53AEBB581F29C1A500B81D16 /* klt_uncheck@2x.png */,
+				53AEBB4A1F29C1A500B81D16 /* coloradjust_selected.png */,
+				53AEBB4B1F29C1A500B81D16 /* coloradjust_unselected.png */,
+				53AEBB4C1F29C1A500B81D16 /* contrast_selected.png */,
+				53AEBB4D1F29C1A500B81D16 /* contrast_unselected.png */,
+				53AEBB4E1F29C1A500B81D16 /* effect_selected.png */,
+				53AEBB4F1F29C1A500B81D16 /* effect_unselected.png */,
+			);
+			name = Resoure;
 			sourceTree = "<group>";
 		};
 		6AC5B3481E8E03F000E8DCC1 = {
