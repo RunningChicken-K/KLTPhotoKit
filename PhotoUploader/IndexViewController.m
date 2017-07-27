@@ -33,14 +33,6 @@
     // Dispose of any resources that can be recreated.
 }
 
-- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    if (indexPath.row == 1) {
-        KLTAlbumPhotoList * kap = [[KLTAlbumPhotoList alloc]init];
-        
-        [self.navigationController pushViewController:kap animated:YES];
-    }
-}
 
 /*
 #pragma mark - Navigation

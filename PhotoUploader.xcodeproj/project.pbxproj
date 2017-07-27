@@ -9,38 +9,38 @@
 /* Begin PBXBuildFile section */
 		53AEBB451F297E4700B81D16 /* AvalonViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 53AEBB441F297E4700B81D16 /* AvalonViewController.m */; };
 		53AEBB481F29866600B81D16 /* NavViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 53AEBB471F29866600B81D16 /* NavViewController.m */; };
-		53D42C871F26EE88001D2D50 /* KLTPhotoKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 53D42C861F26EE88001D2D50 /* KLTPhotoKit.m */; };
-		6A32D2871ED2876C0045618F /* KLTEditImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A32D2861ED2876C0045618F /* KLTEditImageViewController.m */; };
-		6A32D2901ED2BECC0045618F /* group_unselected.png in Resources */ = {isa = PBXBuildFile; fileRef = 6A32D2881ED2BECB0045618F /* group_unselected.png */; };
-		6A32D2911ED2BECC0045618F /* group_selected.png in Resources */ = {isa = PBXBuildFile; fileRef = 6A32D2891ED2BECB0045618F /* group_selected.png */; };
-		6A32D2921ED2BECC0045618F /* contrast_selected.png in Resources */ = {isa = PBXBuildFile; fileRef = 6A32D28A1ED2BECB0045618F /* contrast_selected.png */; };
-		6A32D2931ED2BECC0045618F /* contrast_unselected.png in Resources */ = {isa = PBXBuildFile; fileRef = 6A32D28B1ED2BECB0045618F /* contrast_unselected.png */; };
-		6A32D2941ED2BECC0045618F /* coloradjust_unselected.png in Resources */ = {isa = PBXBuildFile; fileRef = 6A32D28C1ED2BECB0045618F /* coloradjust_unselected.png */; };
-		6A32D2951ED2BECC0045618F /* coloradjust_selected.png in Resources */ = {isa = PBXBuildFile; fileRef = 6A32D28D1ED2BECB0045618F /* coloradjust_selected.png */; };
-		6A32D2961ED2BECC0045618F /* effect_unselected.png in Resources */ = {isa = PBXBuildFile; fileRef = 6A32D28E1ED2BECB0045618F /* effect_unselected.png */; };
-		6A32D2971ED2BECC0045618F /* effect_selected.png in Resources */ = {isa = PBXBuildFile; fileRef = 6A32D28F1ED2BECB0045618F /* effect_selected.png */; };
-		6A32D29A1EE017BB0045618F /* KLTEffectView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A32D2991EE017BB0045618F /* KLTEffectView.m */; };
-		6A4A6BB61EE52E3E00DF5206 /* klt_slider@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6A4A6BB51EE52E3E00DF5206 /* klt_slider@2x.png */; };
+		53AEBB791F29C1A500B81D16 /* coloradjust_selected.png in Resources */ = {isa = PBXBuildFile; fileRef = 53AEBB4A1F29C1A500B81D16 /* coloradjust_selected.png */; };
+		53AEBB7A1F29C1A500B81D16 /* coloradjust_unselected.png in Resources */ = {isa = PBXBuildFile; fileRef = 53AEBB4B1F29C1A500B81D16 /* coloradjust_unselected.png */; };
+		53AEBB7B1F29C1A500B81D16 /* contrast_selected.png in Resources */ = {isa = PBXBuildFile; fileRef = 53AEBB4C1F29C1A500B81D16 /* contrast_selected.png */; };
+		53AEBB7C1F29C1A500B81D16 /* contrast_unselected.png in Resources */ = {isa = PBXBuildFile; fileRef = 53AEBB4D1F29C1A500B81D16 /* contrast_unselected.png */; };
+		53AEBB7D1F29C1A500B81D16 /* effect_selected.png in Resources */ = {isa = PBXBuildFile; fileRef = 53AEBB4E1F29C1A500B81D16 /* effect_selected.png */; };
+		53AEBB7E1F29C1A500B81D16 /* effect_unselected.png in Resources */ = {isa = PBXBuildFile; fileRef = 53AEBB4F1F29C1A500B81D16 /* effect_unselected.png */; };
+		53AEBB7F1F29C1A500B81D16 /* FPSLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 53AEBB521F29C1A500B81D16 /* FPSLabel.m */; };
+		53AEBB801F29C1A500B81D16 /* group_selected.png in Resources */ = {isa = PBXBuildFile; fileRef = 53AEBB531F29C1A500B81D16 /* group_selected.png */; };
+		53AEBB811F29C1A500B81D16 /* group_unselected.png in Resources */ = {isa = PBXBuildFile; fileRef = 53AEBB541F29C1A500B81D16 /* group_unselected.png */; };
+		53AEBB821F29C1A500B81D16 /* klt_back@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 53AEBB551F29C1A500B81D16 /* klt_back@2x.png */; };
+		53AEBB831F29C1A500B81D16 /* klt_check@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 53AEBB561F29C1A500B81D16 /* klt_check@2x.png */; };
+		53AEBB841F29C1A500B81D16 /* klt_slider@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 53AEBB571F29C1A500B81D16 /* klt_slider@2x.png */; };
+		53AEBB851F29C1A500B81D16 /* klt_uncheck@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 53AEBB581F29C1A500B81D16 /* klt_uncheck@2x.png */; };
+		53AEBB861F29C1A500B81D16 /* KLTAlbumPhotoList.m in Sources */ = {isa = PBXBuildFile; fileRef = 53AEBB5A1F29C1A500B81D16 /* KLTAlbumPhotoList.m */; };
+		53AEBB871F29C1A500B81D16 /* KLTAsset.m in Sources */ = {isa = PBXBuildFile; fileRef = 53AEBB5C1F29C1A500B81D16 /* KLTAsset.m */; };
+		53AEBB881F29C1A500B81D16 /* KLTAssetCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 53AEBB5E1F29C1A500B81D16 /* KLTAssetCell.m */; };
+		53AEBB891F29C1A500B81D16 /* KLTAssetCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 53AEBB5F1F29C1A500B81D16 /* KLTAssetCell.xib */; };
+		53AEBB8A1F29C1A500B81D16 /* KLTEditImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 53AEBB611F29C1A500B81D16 /* KLTEditImageViewController.m */; };
+		53AEBB8B1F29C1A500B81D16 /* KLTEffectView.m in Sources */ = {isa = PBXBuildFile; fileRef = 53AEBB631F29C1A500B81D16 /* KLTEffectView.m */; };
+		53AEBB8C1F29C1A500B81D16 /* KLTFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 53AEBB651F29C1A500B81D16 /* KLTFilter.m */; };
+		53AEBB8D1F29C1A500B81D16 /* KLTImageBrowserController.m in Sources */ = {isa = PBXBuildFile; fileRef = 53AEBB671F29C1A500B81D16 /* KLTImageBrowserController.m */; };
+		53AEBB8E1F29C1A500B81D16 /* KLTImageUPLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = 53AEBB691F29C1A500B81D16 /* KLTImageUPLoader.m */; };
+		53AEBB8F1F29C1A500B81D16 /* KLTPhotoKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 53AEBB6C1F29C1A500B81D16 /* KLTPhotoKit.m */; };
+		53AEBB901F29C1A500B81D16 /* KLTPhotoNavController.m in Sources */ = {isa = PBXBuildFile; fileRef = 53AEBB6E1F29C1A500B81D16 /* KLTPhotoNavController.m */; };
+		53AEBB911F29C1A500B81D16 /* KLTRenderQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 53AEBB701F29C1A500B81D16 /* KLTRenderQueue.m */; };
+		53AEBB921F29C1A500B81D16 /* KLTRequestFormData.m in Sources */ = {isa = PBXBuildFile; fileRef = 53AEBB721F29C1A500B81D16 /* KLTRequestFormData.m */; };
+		53AEBB931F29C1A500B81D16 /* KLTSinglePhotoPicker.m in Sources */ = {isa = PBXBuildFile; fileRef = 53AEBB741F29C1A500B81D16 /* KLTSinglePhotoPicker.m */; };
+		53AEBB941F29C1A500B81D16 /* KLTUPLoadMaskView.m in Sources */ = {isa = PBXBuildFile; fileRef = 53AEBB761F29C1A500B81D16 /* KLTUPLoadMaskView.m */; };
+		53AEBB951F29C1A500B81D16 /* UIImageView+KLTUPLoad.m in Sources */ = {isa = PBXBuildFile; fileRef = 53AEBB781F29C1A500B81D16 /* UIImageView+KLTUPLoad.m */; };
 		6A55A4411E9CD39D00D8CF31 /* NSArray+Log.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A55A4401E9CD39D00D8CF31 /* NSArray+Log.m */; };
-		6A5D48211EB9B80F00A3F15D /* KLTAssetCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A5D481F1EB9B80F00A3F15D /* KLTAssetCell.m */; };
-		6A5D48221EB9B80F00A3F15D /* KLTAssetCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6A5D48201EB9B80F00A3F15D /* KLTAssetCell.xib */; };
-		6A5D482E1EB9BDFE00A3F15D /* KLTAsset.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A5D482D1EB9BDFE00A3F15D /* KLTAsset.m */; };
-		6A5D48311EB9DBFC00A3F15D /* FPSLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A5D48301EB9DBFC00A3F15D /* FPSLabel.m */; };
-		6A5D48331EBACA3D00A3F15D /* klt_uncheck@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6A5D48321EBACA3D00A3F15D /* klt_uncheck@2x.png */; };
-		6A5D48351EBACFF500A3F15D /* klt_check@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6A5D48341EBACFF500A3F15D /* klt_check@2x.png */; };
-		6A5D48511EBB0A2C00A3F15D /* KLTImageBrowserController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A5D48501EBB0A2C00A3F15D /* KLTImageBrowserController.m */; };
-		6A5D48531EBB1C8300A3F15D /* klt_back@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6A5D48521EBB1C8300A3F15D /* klt_back@2x.png */; };
-		6A5D48561EBC5AEC00A3F15D /* KLTPhotoNavController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A5D48551EBC5AEC00A3F15D /* KLTPhotoNavController.m */; };
 		6A5D48591EC01BB800A3F15D /* FilterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A5D48581EC01BB800A3F15D /* FilterViewController.m */; };
-		6A5D485C1EC0720E00A3F15D /* KLTFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A5D485B1EC0720E00A3F15D /* KLTFilter.m */; };
-		6A5DA1A11EF7791C00247D66 /* KLTRenderQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A5DA1A01EF7791C00247D66 /* KLTRenderQueue.m */; };
 		6A5DECBC1EADE80B00AA01CE /* IndexViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A5DECBB1EADE80B00AA01CE /* IndexViewController.m */; };
-		6A5DED251EAF16B000AA01CE /* KLTImageUPLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A5DED1C1EAF16B000AA01CE /* KLTImageUPLoader.m */; };
-		6A5DED261EAF16B000AA01CE /* KLTSinglePhotoPicker.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A5DED1E1EAF16B000AA01CE /* KLTSinglePhotoPicker.m */; };
-		6A5DED271EAF16B000AA01CE /* KLTRequestFormData.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A5DED201EAF16B000AA01CE /* KLTRequestFormData.m */; };
-		6A5DED281EAF16B000AA01CE /* KLTUPLoadMaskView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A5DED221EAF16B000AA01CE /* KLTUPLoadMaskView.m */; };
-		6A5DED291EAF16B000AA01CE /* UIImageView+KLTUPLoad.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A5DED241EAF16B000AA01CE /* UIImageView+KLTUPLoad.m */; };
-		6A833AFB1EB098860009719F /* KLTAlbumPhotoList.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A833AFA1EB098860009719F /* KLTAlbumPhotoList.m */; };
 		6ABC33571E9B660F00A50EAF /* photo.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 6ABC33561E9B660F00A50EAF /* photo.JPG */; };
 		6AC5B3561E8E03F000E8DCC1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AC5B3551E8E03F000E8DCC1 /* main.m */; };
 		6AC5B3591E8E03F000E8DCC1 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AC5B3581E8E03F000E8DCC1 /* AppDelegate.m */; };
@@ -57,59 +57,59 @@
 		53AEBB441F297E4700B81D16 /* AvalonViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AvalonViewController.m; sourceTree = "<group>"; };
 		53AEBB461F29866600B81D16 /* NavViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NavViewController.h; sourceTree = "<group>"; };
 		53AEBB471F29866600B81D16 /* NavViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NavViewController.m; sourceTree = "<group>"; };
-		53D42C851F26EE88001D2D50 /* KLTPhotoKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KLTPhotoKit.h; sourceTree = "<group>"; };
-		53D42C861F26EE88001D2D50 /* KLTPhotoKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KLTPhotoKit.m; sourceTree = "<group>"; };
-		6A32D2751ECC3C790045618F /* FilterReference.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FilterReference.h; sourceTree = "<group>"; };
-		6A32D2851ED2876C0045618F /* KLTEditImageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KLTEditImageViewController.h; sourceTree = "<group>"; };
-		6A32D2861ED2876C0045618F /* KLTEditImageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KLTEditImageViewController.m; sourceTree = "<group>"; };
-		6A32D2881ED2BECB0045618F /* group_unselected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = group_unselected.png; sourceTree = "<group>"; };
-		6A32D2891ED2BECB0045618F /* group_selected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = group_selected.png; sourceTree = "<group>"; };
-		6A32D28A1ED2BECB0045618F /* contrast_selected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = contrast_selected.png; sourceTree = "<group>"; };
-		6A32D28B1ED2BECB0045618F /* contrast_unselected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = contrast_unselected.png; sourceTree = "<group>"; };
-		6A32D28C1ED2BECB0045618F /* coloradjust_unselected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = coloradjust_unselected.png; sourceTree = "<group>"; };
-		6A32D28D1ED2BECB0045618F /* coloradjust_selected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = coloradjust_selected.png; sourceTree = "<group>"; };
-		6A32D28E1ED2BECB0045618F /* effect_unselected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = effect_unselected.png; sourceTree = "<group>"; };
-		6A32D28F1ED2BECB0045618F /* effect_selected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = effect_selected.png; sourceTree = "<group>"; };
-		6A32D2981EE017BB0045618F /* KLTEffectView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KLTEffectView.h; sourceTree = "<group>"; };
-		6A32D2991EE017BB0045618F /* KLTEffectView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KLTEffectView.m; sourceTree = "<group>"; };
-		6A4A6BB51EE52E3E00DF5206 /* klt_slider@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "klt_slider@2x.png"; sourceTree = "<group>"; };
+		53AEBB4A1F29C1A500B81D16 /* coloradjust_selected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = coloradjust_selected.png; sourceTree = "<group>"; };
+		53AEBB4B1F29C1A500B81D16 /* coloradjust_unselected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = coloradjust_unselected.png; sourceTree = "<group>"; };
+		53AEBB4C1F29C1A500B81D16 /* contrast_selected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = contrast_selected.png; sourceTree = "<group>"; };
+		53AEBB4D1F29C1A500B81D16 /* contrast_unselected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = contrast_unselected.png; sourceTree = "<group>"; };
+		53AEBB4E1F29C1A500B81D16 /* effect_selected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = effect_selected.png; sourceTree = "<group>"; };
+		53AEBB4F1F29C1A500B81D16 /* effect_unselected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = effect_unselected.png; sourceTree = "<group>"; };
+		53AEBB501F29C1A500B81D16 /* FilterReference.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FilterReference.h; sourceTree = "<group>"; };
+		53AEBB511F29C1A500B81D16 /* FPSLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FPSLabel.h; sourceTree = "<group>"; };
+		53AEBB521F29C1A500B81D16 /* FPSLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FPSLabel.m; sourceTree = "<group>"; };
+		53AEBB531F29C1A500B81D16 /* group_selected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = group_selected.png; sourceTree = "<group>"; };
+		53AEBB541F29C1A500B81D16 /* group_unselected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = group_unselected.png; sourceTree = "<group>"; };
+		53AEBB551F29C1A500B81D16 /* klt_back@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "klt_back@2x.png"; sourceTree = "<group>"; };
+		53AEBB561F29C1A500B81D16 /* klt_check@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "klt_check@2x.png"; sourceTree = "<group>"; };
+		53AEBB571F29C1A500B81D16 /* klt_slider@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "klt_slider@2x.png"; sourceTree = "<group>"; };
+		53AEBB581F29C1A500B81D16 /* klt_uncheck@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "klt_uncheck@2x.png"; sourceTree = "<group>"; };
+		53AEBB591F29C1A500B81D16 /* KLTAlbumPhotoList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KLTAlbumPhotoList.h; sourceTree = "<group>"; };
+		53AEBB5A1F29C1A500B81D16 /* KLTAlbumPhotoList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KLTAlbumPhotoList.m; sourceTree = "<group>"; };
+		53AEBB5B1F29C1A500B81D16 /* KLTAsset.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KLTAsset.h; sourceTree = "<group>"; };
+		53AEBB5C1F29C1A500B81D16 /* KLTAsset.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KLTAsset.m; sourceTree = "<group>"; };
+		53AEBB5D1F29C1A500B81D16 /* KLTAssetCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KLTAssetCell.h; sourceTree = "<group>"; };
+		53AEBB5E1F29C1A500B81D16 /* KLTAssetCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KLTAssetCell.m; sourceTree = "<group>"; };
+		53AEBB5F1F29C1A500B81D16 /* KLTAssetCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = KLTAssetCell.xib; sourceTree = "<group>"; };
+		53AEBB601F29C1A500B81D16 /* KLTEditImageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KLTEditImageViewController.h; sourceTree = "<group>"; };
+		53AEBB611F29C1A500B81D16 /* KLTEditImageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KLTEditImageViewController.m; sourceTree = "<group>"; };
+		53AEBB621F29C1A500B81D16 /* KLTEffectView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KLTEffectView.h; sourceTree = "<group>"; };
+		53AEBB631F29C1A500B81D16 /* KLTEffectView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KLTEffectView.m; sourceTree = "<group>"; };
+		53AEBB641F29C1A500B81D16 /* KLTFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KLTFilter.h; sourceTree = "<group>"; };
+		53AEBB651F29C1A500B81D16 /* KLTFilter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KLTFilter.m; sourceTree = "<group>"; };
+		53AEBB661F29C1A500B81D16 /* KLTImageBrowserController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KLTImageBrowserController.h; sourceTree = "<group>"; };
+		53AEBB671F29C1A500B81D16 /* KLTImageBrowserController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KLTImageBrowserController.m; sourceTree = "<group>"; };
+		53AEBB681F29C1A500B81D16 /* KLTImageUPLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KLTImageUPLoader.h; sourceTree = "<group>"; };
+		53AEBB691F29C1A500B81D16 /* KLTImageUPLoader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KLTImageUPLoader.m; sourceTree = "<group>"; };
+		53AEBB6A1F29C1A500B81D16 /* KLTImageUploaderDefine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KLTImageUploaderDefine.h; sourceTree = "<group>"; };
+		53AEBB6B1F29C1A500B81D16 /* KLTPhotoKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KLTPhotoKit.h; sourceTree = "<group>"; };
+		53AEBB6C1F29C1A500B81D16 /* KLTPhotoKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KLTPhotoKit.m; sourceTree = "<group>"; };
+		53AEBB6D1F29C1A500B81D16 /* KLTPhotoNavController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KLTPhotoNavController.h; sourceTree = "<group>"; };
+		53AEBB6E1F29C1A500B81D16 /* KLTPhotoNavController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KLTPhotoNavController.m; sourceTree = "<group>"; };
+		53AEBB6F1F29C1A500B81D16 /* KLTRenderQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KLTRenderQueue.h; sourceTree = "<group>"; };
+		53AEBB701F29C1A500B81D16 /* KLTRenderQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KLTRenderQueue.m; sourceTree = "<group>"; };
+		53AEBB711F29C1A500B81D16 /* KLTRequestFormData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KLTRequestFormData.h; sourceTree = "<group>"; };
+		53AEBB721F29C1A500B81D16 /* KLTRequestFormData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KLTRequestFormData.m; sourceTree = "<group>"; };
+		53AEBB731F29C1A500B81D16 /* KLTSinglePhotoPicker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KLTSinglePhotoPicker.h; sourceTree = "<group>"; };
+		53AEBB741F29C1A500B81D16 /* KLTSinglePhotoPicker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KLTSinglePhotoPicker.m; sourceTree = "<group>"; };
+		53AEBB751F29C1A500B81D16 /* KLTUPLoadMaskView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KLTUPLoadMaskView.h; sourceTree = "<group>"; };
+		53AEBB761F29C1A500B81D16 /* KLTUPLoadMaskView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KLTUPLoadMaskView.m; sourceTree = "<group>"; };
+		53AEBB771F29C1A500B81D16 /* UIImageView+KLTUPLoad.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+KLTUPLoad.h"; sourceTree = "<group>"; };
+		53AEBB781F29C1A500B81D16 /* UIImageView+KLTUPLoad.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+KLTUPLoad.m"; sourceTree = "<group>"; };
 		6A55A43F1E9CD39D00D8CF31 /* NSArray+Log.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+Log.h"; sourceTree = "<group>"; };
 		6A55A4401E9CD39D00D8CF31 /* NSArray+Log.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+Log.m"; sourceTree = "<group>"; };
-		6A5D481D1EB9B58200A3F15D /* KLTImageUploaderDefine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KLTImageUploaderDefine.h; sourceTree = "<group>"; };
-		6A5D481E1EB9B80F00A3F15D /* KLTAssetCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KLTAssetCell.h; sourceTree = "<group>"; };
-		6A5D481F1EB9B80F00A3F15D /* KLTAssetCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KLTAssetCell.m; sourceTree = "<group>"; };
-		6A5D48201EB9B80F00A3F15D /* KLTAssetCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = KLTAssetCell.xib; sourceTree = "<group>"; };
-		6A5D482C1EB9BDFE00A3F15D /* KLTAsset.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KLTAsset.h; sourceTree = "<group>"; };
-		6A5D482D1EB9BDFE00A3F15D /* KLTAsset.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KLTAsset.m; sourceTree = "<group>"; };
-		6A5D482F1EB9DBFC00A3F15D /* FPSLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FPSLabel.h; sourceTree = "<group>"; };
-		6A5D48301EB9DBFC00A3F15D /* FPSLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FPSLabel.m; sourceTree = "<group>"; };
-		6A5D48321EBACA3D00A3F15D /* klt_uncheck@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "klt_uncheck@2x.png"; sourceTree = "<group>"; };
-		6A5D48341EBACFF500A3F15D /* klt_check@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "klt_check@2x.png"; sourceTree = "<group>"; };
-		6A5D484F1EBB0A2C00A3F15D /* KLTImageBrowserController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KLTImageBrowserController.h; sourceTree = "<group>"; };
-		6A5D48501EBB0A2C00A3F15D /* KLTImageBrowserController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KLTImageBrowserController.m; sourceTree = "<group>"; };
-		6A5D48521EBB1C8300A3F15D /* klt_back@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "klt_back@2x.png"; sourceTree = "<group>"; };
-		6A5D48541EBC5AEC00A3F15D /* KLTPhotoNavController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KLTPhotoNavController.h; sourceTree = "<group>"; };
-		6A5D48551EBC5AEC00A3F15D /* KLTPhotoNavController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KLTPhotoNavController.m; sourceTree = "<group>"; };
 		6A5D48571EC01BB800A3F15D /* FilterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FilterViewController.h; sourceTree = "<group>"; };
 		6A5D48581EC01BB800A3F15D /* FilterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FilterViewController.m; sourceTree = "<group>"; };
-		6A5D485A1EC0720E00A3F15D /* KLTFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KLTFilter.h; sourceTree = "<group>"; };
-		6A5D485B1EC0720E00A3F15D /* KLTFilter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KLTFilter.m; sourceTree = "<group>"; };
-		6A5DA19F1EF7791C00247D66 /* KLTRenderQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KLTRenderQueue.h; sourceTree = "<group>"; };
-		6A5DA1A01EF7791C00247D66 /* KLTRenderQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KLTRenderQueue.m; sourceTree = "<group>"; };
 		6A5DECBA1EADE80B00AA01CE /* IndexViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IndexViewController.h; sourceTree = "<group>"; };
 		6A5DECBB1EADE80B00AA01CE /* IndexViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IndexViewController.m; sourceTree = "<group>"; };
-		6A5DED1B1EAF16B000AA01CE /* KLTImageUPLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KLTImageUPLoader.h; sourceTree = "<group>"; };
-		6A5DED1C1EAF16B000AA01CE /* KLTImageUPLoader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KLTImageUPLoader.m; sourceTree = "<group>"; };
-		6A5DED1D1EAF16B000AA01CE /* KLTSinglePhotoPicker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KLTSinglePhotoPicker.h; sourceTree = "<group>"; };
-		6A5DED1E1EAF16B000AA01CE /* KLTSinglePhotoPicker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KLTSinglePhotoPicker.m; sourceTree = "<group>"; };
-		6A5DED1F1EAF16B000AA01CE /* KLTRequestFormData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KLTRequestFormData.h; sourceTree = "<group>"; };
-		6A5DED201EAF16B000AA01CE /* KLTRequestFormData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KLTRequestFormData.m; sourceTree = "<group>"; };
-		6A5DED211EAF16B000AA01CE /* KLTUPLoadMaskView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KLTUPLoadMaskView.h; sourceTree = "<group>"; };
-		6A5DED221EAF16B000AA01CE /* KLTUPLoadMaskView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KLTUPLoadMaskView.m; sourceTree = "<group>"; };
-		6A5DED231EAF16B000AA01CE /* UIImageView+KLTUPLoad.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+KLTUPLoad.h"; sourceTree = "<group>"; };
-		6A5DED241EAF16B000AA01CE /* UIImageView+KLTUPLoad.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+KLTUPLoad.m"; sourceTree = "<group>"; };
-		6A833AF91EB098860009719F /* KLTAlbumPhotoList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KLTAlbumPhotoList.h; sourceTree = "<group>"; };
-		6A833AFA1EB098860009719F /* KLTAlbumPhotoList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KLTAlbumPhotoList.m; sourceTree = "<group>"; };
 		6ABC33561E9B660F00A50EAF /* photo.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = photo.JPG; sourceTree = "<group>"; };
 		6AC5B3511E8E03F000E8DCC1 /* PhotoUploader.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PhotoUploader.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6AC5B3551E8E03F000E8DCC1 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -135,66 +135,58 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		6A5D48231EB9B8A100A3F15D /* Resource */ = {
+		53AEBB491F29C1A500B81D16 /* KLTPhotoKit */ = {
 			isa = PBXGroup;
 			children = (
-				6A32D2881ED2BECB0045618F /* group_unselected.png */,
-				6A32D2891ED2BECB0045618F /* group_selected.png */,
-				6A32D28A1ED2BECB0045618F /* contrast_selected.png */,
-				6A32D28B1ED2BECB0045618F /* contrast_unselected.png */,
-				6A32D28C1ED2BECB0045618F /* coloradjust_unselected.png */,
-				6A32D28D1ED2BECB0045618F /* coloradjust_selected.png */,
-				6A32D28E1ED2BECB0045618F /* effect_unselected.png */,
-				6A32D28F1ED2BECB0045618F /* effect_selected.png */,
-				6A4A6BB51EE52E3E00DF5206 /* klt_slider@2x.png */,
-				6A5D482F1EB9DBFC00A3F15D /* FPSLabel.h */,
-				6A5D48301EB9DBFC00A3F15D /* FPSLabel.m */,
-				6A5D48521EBB1C8300A3F15D /* klt_back@2x.png */,
-				6A5D48341EBACFF500A3F15D /* klt_check@2x.png */,
-				6A5D48321EBACA3D00A3F15D /* klt_uncheck@2x.png */,
+				53AEBB4A1F29C1A500B81D16 /* coloradjust_selected.png */,
+				53AEBB4B1F29C1A500B81D16 /* coloradjust_unselected.png */,
+				53AEBB4C1F29C1A500B81D16 /* contrast_selected.png */,
+				53AEBB4D1F29C1A500B81D16 /* contrast_unselected.png */,
+				53AEBB4E1F29C1A500B81D16 /* effect_selected.png */,
+				53AEBB4F1F29C1A500B81D16 /* effect_unselected.png */,
+				53AEBB501F29C1A500B81D16 /* FilterReference.h */,
+				53AEBB511F29C1A500B81D16 /* FPSLabel.h */,
+				53AEBB521F29C1A500B81D16 /* FPSLabel.m */,
+				53AEBB531F29C1A500B81D16 /* group_selected.png */,
+				53AEBB541F29C1A500B81D16 /* group_unselected.png */,
+				53AEBB551F29C1A500B81D16 /* klt_back@2x.png */,
+				53AEBB561F29C1A500B81D16 /* klt_check@2x.png */,
+				53AEBB571F29C1A500B81D16 /* klt_slider@2x.png */,
+				53AEBB581F29C1A500B81D16 /* klt_uncheck@2x.png */,
+				53AEBB591F29C1A500B81D16 /* KLTAlbumPhotoList.h */,
+				53AEBB5A1F29C1A500B81D16 /* KLTAlbumPhotoList.m */,
+				53AEBB5B1F29C1A500B81D16 /* KLTAsset.h */,
+				53AEBB5C1F29C1A500B81D16 /* KLTAsset.m */,
+				53AEBB5D1F29C1A500B81D16 /* KLTAssetCell.h */,
+				53AEBB5E1F29C1A500B81D16 /* KLTAssetCell.m */,
+				53AEBB5F1F29C1A500B81D16 /* KLTAssetCell.xib */,
+				53AEBB601F29C1A500B81D16 /* KLTEditImageViewController.h */,
+				53AEBB611F29C1A500B81D16 /* KLTEditImageViewController.m */,
+				53AEBB621F29C1A500B81D16 /* KLTEffectView.h */,
+				53AEBB631F29C1A500B81D16 /* KLTEffectView.m */,
+				53AEBB641F29C1A500B81D16 /* KLTFilter.h */,
+				53AEBB651F29C1A500B81D16 /* KLTFilter.m */,
+				53AEBB661F29C1A500B81D16 /* KLTImageBrowserController.h */,
+				53AEBB671F29C1A500B81D16 /* KLTImageBrowserController.m */,
+				53AEBB681F29C1A500B81D16 /* KLTImageUPLoader.h */,
+				53AEBB691F29C1A500B81D16 /* KLTImageUPLoader.m */,
+				53AEBB6A1F29C1A500B81D16 /* KLTImageUploaderDefine.h */,
+				53AEBB6B1F29C1A500B81D16 /* KLTPhotoKit.h */,
+				53AEBB6C1F29C1A500B81D16 /* KLTPhotoKit.m */,
+				53AEBB6D1F29C1A500B81D16 /* KLTPhotoNavController.h */,
+				53AEBB6E1F29C1A500B81D16 /* KLTPhotoNavController.m */,
+				53AEBB6F1F29C1A500B81D16 /* KLTRenderQueue.h */,
+				53AEBB701F29C1A500B81D16 /* KLTRenderQueue.m */,
+				53AEBB711F29C1A500B81D16 /* KLTRequestFormData.h */,
+				53AEBB721F29C1A500B81D16 /* KLTRequestFormData.m */,
+				53AEBB731F29C1A500B81D16 /* KLTSinglePhotoPicker.h */,
+				53AEBB741F29C1A500B81D16 /* KLTSinglePhotoPicker.m */,
+				53AEBB751F29C1A500B81D16 /* KLTUPLoadMaskView.h */,
+				53AEBB761F29C1A500B81D16 /* KLTUPLoadMaskView.m */,
+				53AEBB771F29C1A500B81D16 /* UIImageView+KLTUPLoad.h */,
+				53AEBB781F29C1A500B81D16 /* UIImageView+KLTUPLoad.m */,
 			);
-			name = Resource;
-			sourceTree = "<group>";
-		};
-		6A5DED1A1EAF16B000AA01CE /* KLTImageUpLoader */ = {
-			isa = PBXGroup;
-			children = (
-				6A5D48231EB9B8A100A3F15D /* Resource */,
-				53D42C851F26EE88001D2D50 /* KLTPhotoKit.h */,
-				53D42C861F26EE88001D2D50 /* KLTPhotoKit.m */,
-				6A5D481D1EB9B58200A3F15D /* KLTImageUploaderDefine.h */,
-				6A5DED1B1EAF16B000AA01CE /* KLTImageUPLoader.h */,
-				6A5DED1C1EAF16B000AA01CE /* KLTImageUPLoader.m */,
-				6A5DED1D1EAF16B000AA01CE /* KLTSinglePhotoPicker.h */,
-				6A5DED1E1EAF16B000AA01CE /* KLTSinglePhotoPicker.m */,
-				6A5DED1F1EAF16B000AA01CE /* KLTRequestFormData.h */,
-				6A5DED201EAF16B000AA01CE /* KLTRequestFormData.m */,
-				6A5DED211EAF16B000AA01CE /* KLTUPLoadMaskView.h */,
-				6A5DED221EAF16B000AA01CE /* KLTUPLoadMaskView.m */,
-				6A5DED231EAF16B000AA01CE /* UIImageView+KLTUPLoad.h */,
-				6A5DED241EAF16B000AA01CE /* UIImageView+KLTUPLoad.m */,
-				6A833AF91EB098860009719F /* KLTAlbumPhotoList.h */,
-				6A833AFA1EB098860009719F /* KLTAlbumPhotoList.m */,
-				6A5D484F1EBB0A2C00A3F15D /* KLTImageBrowserController.h */,
-				6A5D48501EBB0A2C00A3F15D /* KLTImageBrowserController.m */,
-				6A32D2851ED2876C0045618F /* KLTEditImageViewController.h */,
-				6A32D2861ED2876C0045618F /* KLTEditImageViewController.m */,
-				6A32D2981EE017BB0045618F /* KLTEffectView.h */,
-				6A32D2991EE017BB0045618F /* KLTEffectView.m */,
-				6A5D482C1EB9BDFE00A3F15D /* KLTAsset.h */,
-				6A5D482D1EB9BDFE00A3F15D /* KLTAsset.m */,
-				6A5D481E1EB9B80F00A3F15D /* KLTAssetCell.h */,
-				6A5D481F1EB9B80F00A3F15D /* KLTAssetCell.m */,
-				6A5D48201EB9B80F00A3F15D /* KLTAssetCell.xib */,
-				6A5D48541EBC5AEC00A3F15D /* KLTPhotoNavController.h */,
-				6A5D48551EBC5AEC00A3F15D /* KLTPhotoNavController.m */,
-				6A32D2751ECC3C790045618F /* FilterReference.h */,
-				6A5D485A1EC0720E00A3F15D /* KLTFilter.h */,
-				6A5D485B1EC0720E00A3F15D /* KLTFilter.m */,
-				6A5DA19F1EF7791C00247D66 /* KLTRenderQueue.h */,
-				6A5DA1A01EF7791C00247D66 /* KLTRenderQueue.m */,
-			);
-			path = KLTImageUpLoader;
+			path = KLTPhotoKit;
 			sourceTree = "<group>";
 		};
 		6AC5B3481E8E03F000E8DCC1 = {
@@ -218,7 +210,7 @@
 		6AC5B3531E8E03F000E8DCC1 /* PhotoUploader */ = {
 			isa = PBXGroup;
 			children = (
-				6A5DED1A1EAF16B000AA01CE /* KLTImageUpLoader */,
+				53AEBB491F29C1A500B81D16 /* KLTPhotoKit */,
 				6A55A43F1E9CD39D00D8CF31 /* NSArray+Log.h */,
 				6A55A4401E9CD39D00D8CF31 /* NSArray+Log.m */,
 				53AEBB461F29866600B81D16 /* NavViewController.h */,
@@ -327,23 +319,23 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6A32D2961ED2BECC0045618F /* effect_unselected.png in Resources */,
 				6AC5B3641E8E03F000E8DCC1 /* LaunchScreen.storyboard in Resources */,
 				6AC5B3611E8E03F000E8DCC1 /* Assets.xcassets in Resources */,
-				6A5D48351EBACFF500A3F15D /* klt_check@2x.png in Resources */,
-				6A32D2951ED2BECC0045618F /* coloradjust_selected.png in Resources */,
-				6A32D2911ED2BECC0045618F /* group_selected.png in Resources */,
+				53AEBB7D1F29C1A500B81D16 /* effect_selected.png in Resources */,
+				53AEBB801F29C1A500B81D16 /* group_selected.png in Resources */,
 				6ABC33571E9B660F00A50EAF /* photo.JPG in Resources */,
+				53AEBB7C1F29C1A500B81D16 /* contrast_unselected.png in Resources */,
+				53AEBB891F29C1A500B81D16 /* KLTAssetCell.xib in Resources */,
+				53AEBB821F29C1A500B81D16 /* klt_back@2x.png in Resources */,
+				53AEBB791F29C1A500B81D16 /* coloradjust_selected.png in Resources */,
+				53AEBB7E1F29C1A500B81D16 /* effect_unselected.png in Resources */,
+				53AEBB831F29C1A500B81D16 /* klt_check@2x.png in Resources */,
+				53AEBB851F29C1A500B81D16 /* klt_uncheck@2x.png in Resources */,
+				53AEBB7B1F29C1A500B81D16 /* contrast_selected.png in Resources */,
+				53AEBB841F29C1A500B81D16 /* klt_slider@2x.png in Resources */,
+				53AEBB7A1F29C1A500B81D16 /* coloradjust_unselected.png in Resources */,
 				6AC5B35F1E8E03F000E8DCC1 /* Main.storyboard in Resources */,
-				6A32D2901ED2BECC0045618F /* group_unselected.png in Resources */,
-				6A32D2931ED2BECC0045618F /* contrast_unselected.png in Resources */,
-				6A5D48331EBACA3D00A3F15D /* klt_uncheck@2x.png in Resources */,
-				6A5D48221EB9B80F00A3F15D /* KLTAssetCell.xib in Resources */,
-				6A32D2921ED2BECC0045618F /* contrast_selected.png in Resources */,
-				6A32D2941ED2BECC0045618F /* coloradjust_unselected.png in Resources */,
-				6A32D2971ED2BECC0045618F /* effect_selected.png in Resources */,
-				6A5D48531EBB1C8300A3F15D /* klt_back@2x.png in Resources */,
-				6A4A6BB61EE52E3E00DF5206 /* klt_slider@2x.png in Resources */,
+				53AEBB811F29C1A500B81D16 /* group_unselected.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -354,30 +346,30 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6A32D2871ED2876C0045618F /* KLTEditImageViewController.m in Sources */,
-				6A5D48211EB9B80F00A3F15D /* KLTAssetCell.m in Sources */,
-				6A32D29A1EE017BB0045618F /* KLTEffectView.m in Sources */,
-				6A5D48561EBC5AEC00A3F15D /* KLTPhotoNavController.m in Sources */,
-				6A833AFB1EB098860009719F /* KLTAlbumPhotoList.m in Sources */,
+				53AEBB861F29C1A500B81D16 /* KLTAlbumPhotoList.m in Sources */,
 				6AC5B35C1E8E03F000E8DCC1 /* ViewController.m in Sources */,
+				53AEBB8C1F29C1A500B81D16 /* KLTFilter.m in Sources */,
+				53AEBB911F29C1A500B81D16 /* KLTRenderQueue.m in Sources */,
 				53AEBB451F297E4700B81D16 /* AvalonViewController.m in Sources */,
-				53D42C871F26EE88001D2D50 /* KLTPhotoKit.m in Sources */,
+				53AEBB901F29C1A500B81D16 /* KLTPhotoNavController.m in Sources */,
+				53AEBB7F1F29C1A500B81D16 /* FPSLabel.m in Sources */,
+				53AEBB881F29C1A500B81D16 /* KLTAssetCell.m in Sources */,
 				6A55A4411E9CD39D00D8CF31 /* NSArray+Log.m in Sources */,
+				53AEBB951F29C1A500B81D16 /* UIImageView+KLTUPLoad.m in Sources */,
 				6AC5B3591E8E03F000E8DCC1 /* AppDelegate.m in Sources */,
 				53AEBB481F29866600B81D16 /* NavViewController.m in Sources */,
-				6A5D482E1EB9BDFE00A3F15D /* KLTAsset.m in Sources */,
-				6A5DED271EAF16B000AA01CE /* KLTRequestFormData.m in Sources */,
+				53AEBB8F1F29C1A500B81D16 /* KLTPhotoKit.m in Sources */,
+				53AEBB8A1F29C1A500B81D16 /* KLTEditImageViewController.m in Sources */,
+				53AEBB8B1F29C1A500B81D16 /* KLTEffectView.m in Sources */,
 				6A5DECBC1EADE80B00AA01CE /* IndexViewController.m in Sources */,
-				6A5D485C1EC0720E00A3F15D /* KLTFilter.m in Sources */,
-				6A5DA1A11EF7791C00247D66 /* KLTRenderQueue.m in Sources */,
+				53AEBB8D1F29C1A500B81D16 /* KLTImageBrowserController.m in Sources */,
 				6A5D48591EC01BB800A3F15D /* FilterViewController.m in Sources */,
-				6A5DED261EAF16B000AA01CE /* KLTSinglePhotoPicker.m in Sources */,
-				6A5DED251EAF16B000AA01CE /* KLTImageUPLoader.m in Sources */,
-				6A5D48311EB9DBFC00A3F15D /* FPSLabel.m in Sources */,
+				53AEBB941F29C1A500B81D16 /* KLTUPLoadMaskView.m in Sources */,
+				53AEBB8E1F29C1A500B81D16 /* KLTImageUPLoader.m in Sources */,
+				53AEBB931F29C1A500B81D16 /* KLTSinglePhotoPicker.m in Sources */,
+				53AEBB921F29C1A500B81D16 /* KLTRequestFormData.m in Sources */,
 				6AC5B3561E8E03F000E8DCC1 /* main.m in Sources */,
-				6A5DED281EAF16B000AA01CE /* KLTUPLoadMaskView.m in Sources */,
-				6A5D48511EBB0A2C00A3F15D /* KLTImageBrowserController.m in Sources */,
-				6A5DED291EAF16B000AA01CE /* UIImageView+KLTUPLoad.m in Sources */,
+				53AEBB871F29C1A500B81D16 /* KLTAsset.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
