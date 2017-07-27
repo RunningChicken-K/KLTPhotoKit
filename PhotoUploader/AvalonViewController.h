@@ -1,5 +1,5 @@
 //
-//  NavViewController.h
+//  AvalonViewController.h
 //  PhotoUploader
 //
 //  Created by CZ10000 on 2017/7/27.
@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface NavViewController : UINavigationController
+@interface AvalonViewController : UIViewController
 
 @end

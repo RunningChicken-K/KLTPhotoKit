@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		53AEBB451F297E4700B81D16 /* AvalonViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 53AEBB441F297E4700B81D16 /* AvalonViewController.m */; };
+		53AEBB481F29866600B81D16 /* NavViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 53AEBB471F29866600B81D16 /* NavViewController.m */; };
+		53D42C871F26EE88001D2D50 /* KLTPhotoKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 53D42C861F26EE88001D2D50 /* KLTPhotoKit.m */; };
 		6A32D2871ED2876C0045618F /* KLTEditImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A32D2861ED2876C0045618F /* KLTEditImageViewController.m */; };
 		6A32D2901ED2BECC0045618F /* group_unselected.png in Resources */ = {isa = PBXBuildFile; fileRef = 6A32D2881ED2BECB0045618F /* group_unselected.png */; };
 		6A32D2911ED2BECC0045618F /* group_selected.png in Resources */ = {isa = PBXBuildFile; fileRef = 6A32D2891ED2BECB0045618F /* group_selected.png */; };
@@ -25,7 +28,6 @@
 		6A5D48311EB9DBFC00A3F15D /* FPSLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A5D48301EB9DBFC00A3F15D /* FPSLabel.m */; };
 		6A5D48331EBACA3D00A3F15D /* klt_uncheck@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6A5D48321EBACA3D00A3F15D /* klt_uncheck@2x.png */; };
 		6A5D48351EBACFF500A3F15D /* klt_check@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6A5D48341EBACFF500A3F15D /* klt_check@2x.png */; };
-		6A5D483B1EBAD4A400A3F15D /* NavViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A5D483A1EBAD4A400A3F15D /* NavViewController.m */; };
 		6A5D48511EBB0A2C00A3F15D /* KLTImageBrowserController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A5D48501EBB0A2C00A3F15D /* KLTImageBrowserController.m */; };
 		6A5D48531EBB1C8300A3F15D /* klt_back@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6A5D48521EBB1C8300A3F15D /* klt_back@2x.png */; };
 		6A5D48561EBC5AEC00A3F15D /* KLTPhotoNavController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A5D48551EBC5AEC00A3F15D /* KLTPhotoNavController.m */; };
@@ -51,6 +53,12 @@
 /* Begin PBXFileReference section */
 		3BF3E077091B97766C8FA9D3 /* Pods-PhotoUploader.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PhotoUploader.release.xcconfig"; path = "Pods/Target Support Files/Pods-PhotoUploader/Pods-PhotoUploader.release.xcconfig"; sourceTree = "<group>"; };
 		5348216A673D1D93E2A5942A /* libPods-PhotoUploader.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-PhotoUploader.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		53AEBB431F297E4700B81D16 /* AvalonViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AvalonViewController.h; sourceTree = "<group>"; };
+		53AEBB441F297E4700B81D16 /* AvalonViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AvalonViewController.m; sourceTree = "<group>"; };
+		53AEBB461F29866600B81D16 /* NavViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NavViewController.h; sourceTree = "<group>"; };
+		53AEBB471F29866600B81D16 /* NavViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NavViewController.m; sourceTree = "<group>"; };
+		53D42C851F26EE88001D2D50 /* KLTPhotoKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KLTPhotoKit.h; sourceTree = "<group>"; };
+		53D42C861F26EE88001D2D50 /* KLTPhotoKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KLTPhotoKit.m; sourceTree = "<group>"; };
 		6A32D2751ECC3C790045618F /* FilterReference.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FilterReference.h; sourceTree = "<group>"; };
 		6A32D2851ED2876C0045618F /* KLTEditImageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KLTEditImageViewController.h; sourceTree = "<group>"; };
 		6A32D2861ED2876C0045618F /* KLTEditImageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KLTEditImageViewController.m; sourceTree = "<group>"; };
@@ -77,8 +85,6 @@
 		6A5D48301EB9DBFC00A3F15D /* FPSLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FPSLabel.m; sourceTree = "<group>"; };
 		6A5D48321EBACA3D00A3F15D /* klt_uncheck@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "klt_uncheck@2x.png"; sourceTree = "<group>"; };
 		6A5D48341EBACFF500A3F15D /* klt_check@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "klt_check@2x.png"; sourceTree = "<group>"; };
-		6A5D48391EBAD4A400A3F15D /* NavViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NavViewController.h; sourceTree = "<group>"; };
-		6A5D483A1EBAD4A400A3F15D /* NavViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NavViewController.m; sourceTree = "<group>"; };
 		6A5D484F1EBB0A2C00A3F15D /* KLTImageBrowserController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KLTImageBrowserController.h; sourceTree = "<group>"; };
 		6A5D48501EBB0A2C00A3F15D /* KLTImageBrowserController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KLTImageBrowserController.m; sourceTree = "<group>"; };
 		6A5D48521EBB1C8300A3F15D /* klt_back@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "klt_back@2x.png"; sourceTree = "<group>"; };
@@ -154,6 +160,8 @@
 			isa = PBXGroup;
 			children = (
 				6A5D48231EB9B8A100A3F15D /* Resource */,
+				53D42C851F26EE88001D2D50 /* KLTPhotoKit.h */,
+				53D42C861F26EE88001D2D50 /* KLTPhotoKit.m */,
 				6A5D481D1EB9B58200A3F15D /* KLTImageUploaderDefine.h */,
 				6A5DED1B1EAF16B000AA01CE /* KLTImageUPLoader.h */,
 				6A5DED1C1EAF16B000AA01CE /* KLTImageUPLoader.m */,
@@ -213,15 +221,17 @@
 				6A5DED1A1EAF16B000AA01CE /* KLTImageUpLoader */,
 				6A55A43F1E9CD39D00D8CF31 /* NSArray+Log.h */,
 				6A55A4401E9CD39D00D8CF31 /* NSArray+Log.m */,
+				53AEBB461F29866600B81D16 /* NavViewController.h */,
+				53AEBB471F29866600B81D16 /* NavViewController.m */,
 				6A5DECBA1EADE80B00AA01CE /* IndexViewController.h */,
 				6A5DECBB1EADE80B00AA01CE /* IndexViewController.m */,
 				6A5D48571EC01BB800A3F15D /* FilterViewController.h */,
 				6A5D48581EC01BB800A3F15D /* FilterViewController.m */,
+				53AEBB431F297E4700B81D16 /* AvalonViewController.h */,
+				53AEBB441F297E4700B81D16 /* AvalonViewController.m */,
 				6ABC33561E9B660F00A50EAF /* photo.JPG */,
 				6AC5B3571E8E03F000E8DCC1 /* AppDelegate.h */,
 				6AC5B3581E8E03F000E8DCC1 /* AppDelegate.m */,
-				6A5D48391EBAD4A400A3F15D /* NavViewController.h */,
-				6A5D483A1EBAD4A400A3F15D /* NavViewController.m */,
 				6AC5B35A1E8E03F000E8DCC1 /* ViewController.h */,
 				6AC5B35B1E8E03F000E8DCC1 /* ViewController.m */,
 				6AC5B35D1E8E03F000E8DCC1 /* Main.storyboard */,
@@ -350,9 +360,11 @@
 				6A5D48561EBC5AEC00A3F15D /* KLTPhotoNavController.m in Sources */,
 				6A833AFB1EB098860009719F /* KLTAlbumPhotoList.m in Sources */,
 				6AC5B35C1E8E03F000E8DCC1 /* ViewController.m in Sources */,
+				53AEBB451F297E4700B81D16 /* AvalonViewController.m in Sources */,
+				53D42C871F26EE88001D2D50 /* KLTPhotoKit.m in Sources */,
 				6A55A4411E9CD39D00D8CF31 /* NSArray+Log.m in Sources */,
-				6A5D483B1EBAD4A400A3F15D /* NavViewController.m in Sources */,
 				6AC5B3591E8E03F000E8DCC1 /* AppDelegate.m in Sources */,
+				53AEBB481F29866600B81D16 /* NavViewController.m in Sources */,
 				6A5D482E1EB9BDFE00A3F15D /* KLTAsset.m in Sources */,
 				6A5DED271EAF16B000AA01CE /* KLTRequestFormData.m in Sources */,
 				6A5DECBC1EADE80B00AA01CE /* IndexViewController.m in Sources */,

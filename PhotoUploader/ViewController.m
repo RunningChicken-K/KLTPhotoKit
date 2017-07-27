@@ -40,7 +40,6 @@
     KLTImageUPLoader * uploader =  [_imagView uploadSingleImageWithUrl:url FileName:@"pic" Prarmeters:parameters Completion:^(NSData *data,UIImageView * imageView) {
         NSLog(@"上传成功");
         NSLog(@"%@",DictWithJsonData(data));
-        weakself.view.backgroundColor = [UIColor orangeColor];
     }];
     uploader.photoTool.photoSource = PhotoSourceFromCameraAndAlbum;
     uploader.photoTool.CompressRate = 0.1;

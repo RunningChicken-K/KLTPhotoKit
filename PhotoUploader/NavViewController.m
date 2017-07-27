@@ -2,7 +2,7 @@
 //  NavViewController.m
 //  PhotoUploader
 //
-//  Created by 孔令涛 on 2017/5/4.
+//  Created by CZ10000 on 2017/7/27.
 //  Copyright © 2017年 KongLT. All rights reserved.
 //
 

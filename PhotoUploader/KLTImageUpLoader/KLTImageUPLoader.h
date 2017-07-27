@@ -29,6 +29,7 @@
 
 - (void)uploadImage;
 
-//-(void)uploadImageWithUrl:(NSString *)url Prarmaters:(NSDictionary *)parameters;
+//上传多张图片
+- (void)uploadImages:(NSDictionary *)images Url:(NSString *)url Parameters:(NSDictionary *)parameters Progress:(void (^)(CGFloat progress))progress Completion:(void(^)(NSData * data,NSError * error))completion;
 
 @end

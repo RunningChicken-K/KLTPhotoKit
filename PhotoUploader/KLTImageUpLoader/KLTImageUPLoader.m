@@ -104,34 +104,62 @@
         
         NSData * formData = [weakself getBodyDataWithImageData:UIImagePNGRepresentation(image) Parameters:parameters];
 
-        if (weakself.currentTask) {
-            [weakself.currentTask cancel];
-        }
-        
-        NSURLSessionTask * task = [weakself.session uploadTaskWithRequest:request fromData:formData completionHandler:^(NSData * _Nullable data, NSURLResponse * _Nullable response, NSError * _Nullable error) {
-            
-            if (weakself.completionHandler) {
-                dispatch_main_async_safe(^{
-                    weakself.completionHandler(data,error);
-                });
-                
-            }
-            
-            if (error.code != -999) {
-                //如果不是主动取消的Task  则不释放session
-                [weakself.session finishTasksAndInvalidate];
-                //已经invalidate的session并不会释放 此处主动设置为nil 再次调用self.session时就会创建新的可用session对象
-                weakself.session = nil;
-            }
-           
-        
-            }];
-        weakself.currentTask = task;
-        [task resume];
+        [weakself uploadWithFormRequest:request Data:formData];
         
     }];
 
 }
+
+- (void)uploadImages:(NSDictionary *)images Url:(NSString *)url Parameters:(NSDictionary *)parameters Progress:(void (^)(CGFloat))progress Completion:(void (^)(NSData *, NSError *))completion
+{
+   
+    if (!url) {
+        url = @"";
+    }
+    if (!parameters) {
+        parameters = @{};
+    }
+    self.completionHandler = completion;
+
+    NSURL * requestUrl = [NSURL URLWithString:url];
+    NSMutableURLRequest * request = [NSMutableURLRequest requestWithURL:requestUrl];
+    NSString *header = [NSString stringWithFormat:@"multipart/form-data; boundary=%@",kBoundary];
+    [request setValue:header forHTTPHeaderField:@"Content-Type"];
+    [request setHTTPMethod:@"post"];
+    
+    NSData * formData = [self getBodyDataWithImages:images Parameters:parameters];
+    [self uploadWithFormRequest:request Data:formData];
+    
+}
+- (void)uploadWithFormRequest:(NSURLRequest *)request Data:(NSData *)formData
+{
+     __weak __typeof(self) weakself = self;
+    if (self.currentTask) {
+        [self.currentTask cancel];
+    }
+    NSURLSessionTask * task = [self.session uploadTaskWithRequest:request fromData:formData completionHandler:^(NSData * _Nullable data, NSURLResponse * _Nullable response, NSError * _Nullable error) {
+        
+        if (self.completionHandler) {
+            dispatch_main_async_safe(^{
+                weakself.completionHandler(data,error);
+            });
+            
+        }
+        
+        if (error.code != -999) {
+            //如果不是主动取消的Task  则不释放session
+            [weakself.session finishTasksAndInvalidate];
+            //已经invalidate的session并不会释放 此处主动设置为nil 再次调用self.session时就会创建新的可用session对象
+            weakself.session = nil;
+        }
+        
+        
+    }];
+    self.currentTask = task;
+    [task resume];
+
+}
+
 - (void)URLSession:(NSURLSession *)session task:(NSURLSessionTask *)task didSendBodyData:(int64_t)bytesSent totalBytesSent:(int64_t)totalBytesSent totalBytesExpectedToSend:(int64_t)totalBytesExpectedToSend
 {
     //NSLog(@"\n共%lld \n 已发送%lld\n 即将发送%lld",totalBytesExpectedToSend,totalBytesSent,bytesSent);
@@ -144,10 +172,23 @@
     }
 }
 
+-(NSData *)getBodyDataWithImages:(NSDictionary *)images Parameters:(NSDictionary *)parameters
+{
+    KLTRequestFormData *formData = [[KLTRequestFormData alloc]init];
+    [images enumerateKeysAndObjectsUsingBlock:^(id  _Nonnull key, id  _Nonnull obj, BOOL * _Nonnull stop) {
+        [formData appendFileData:key Name:obj];
+    }];
+    for (id key in parameters.allKeys) {
+        [formData appendBinaryData:[parameters valueForKey:key]  Name:(NSString *)key];
+    }
+    [formData appendFooter];
+    return  formData.data;
+    
+}
 
 -(NSData *)getBodyDataWithImageData:(NSData *)data Parameters:(NSDictionary *)parameters
 {
-    //5.拼接数据
+    //拼接数据
     KLTRequestFormData *formData = [[KLTRequestFormData alloc]init];
     if (!_fileName) {
         NSLog(@"没有fileName！");

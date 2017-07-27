@@ -236,7 +236,6 @@ static CGFloat BottomViewHieght = 40;
                         }
                     }
                     if (complete) {
-                        NSLog(@"%@",imageArray);
                         if (self.didSelectImages) {
                             self.didSelectImages(imageArray);
                         }
