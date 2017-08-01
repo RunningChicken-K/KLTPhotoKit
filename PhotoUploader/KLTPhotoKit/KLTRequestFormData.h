@@ -22,7 +22,7 @@
 /**
  添加非文件参数
  */
-- (void)appendBinaryData:(NSString *)binary Name:(NSString *)name;
+- (void)appendBinaryData:(id)binary Name:(NSString *)name;
 
 /**
  添加尾部标识

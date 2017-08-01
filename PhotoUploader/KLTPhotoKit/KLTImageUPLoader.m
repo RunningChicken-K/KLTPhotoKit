@@ -176,8 +176,9 @@
 {
     KLTRequestFormData *formData = [[KLTRequestFormData alloc]init];
     [images enumerateKeysAndObjectsUsingBlock:^(id  _Nonnull key, id  _Nonnull obj, BOOL * _Nonnull stop) {
-        [formData appendFileData:key Name:obj];
+        [formData appendFileData:UIImagePNGRepresentation(obj) Name:key];
     }];
+
     for (id key in parameters.allKeys) {
         [formData appendBinaryData:[parameters valueForKey:key]  Name:(NSString *)key];
     }

@@ -39,7 +39,39 @@
     [self.data appendData:KNewLine];
 }
 
-- (void)appendBinaryData:(NSString *)binary Name:(NSString *)name
+- (void)appendBinaryData:(id )binary Name:(NSString *)name
+{
+
+    
+    NSData * data = nil;
+    if ([binary  isKindOfClass:[NSData class]]) {
+        data = binary;
+    }
+    else if([binary isEqual:[NSNull null]])
+    {
+        data = [NSData data];
+    }
+    else
+    {
+        data = [[binary description] dataUsingEncoding:NSUTF8StringEncoding];
+    }
+    
+    //此处借鉴AFNetWorking写法
+    
+//    if ([pair.value isKindOfClass:[NSData class]]) {
+//        data = pair.value;
+//    } else if ([pair.value isEqual:[NSNull null]]) {
+//        data = [NSData data];
+//    } else {
+//        data = [[pair.value description] dataUsingEncoding:self.stringEncoding];
+//    }
+    if (data) {
+        [self appendData:data Name:name];
+    }
+    
+
+}
+- (void)appendData:(NSData *)data Name:(NSString *)name
 {
     //拼接非文件参数
     /*
@@ -50,14 +82,14 @@
      */
     [self.data appendData:[[NSString stringWithFormat:@"--%@",kBoundary] dataUsingEncoding:NSUTF8StringEncoding]];
     [self.data appendData:KNewLine];
-   
+    
     [self.data appendData:[[NSString stringWithFormat:@"Content-Disposition: form-data; name=\"%@\"",name] dataUsingEncoding:NSUTF8StringEncoding]];
     [self.data appendData:KNewLine];
     [self.data appendData:KNewLine];
-    [self.data appendData:[binary dataUsingEncoding:NSUTF8StringEncoding]];
+    
+    [self.data appendData:data];
     [self.data appendData:KNewLine];
 }
-
 - (void)appendFooter
 {
     

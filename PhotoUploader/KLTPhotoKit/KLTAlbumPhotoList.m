@@ -251,10 +251,12 @@ static CGFloat BottomViewHieght = 40;
                         }
                     }
                     if (complete) {
-                        if (self.didSelectImages) {
-                            self.didSelectImages(imageArray);
-                        }
-                        [self.navigationController dismissViewControllerAnimated:YES completion:nil];
+ 
+                        [self.navigationController dismissViewControllerAnimated:YES completion:^{
+                            if (self.didSelectImages) {
+                                self.didSelectImages(imageArray);
+                            }
+                        }];
 
                     }
                 }
