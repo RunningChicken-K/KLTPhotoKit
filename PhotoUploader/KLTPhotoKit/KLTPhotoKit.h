@@ -26,10 +26,12 @@
 + (void)singlePhotoWithSource:(PhotoSource)photoSource alertTitle:(NSString *)title alertMessage:(NSString *)msg AllEdit:(BOOL)edited ScaleSize:(CGSize)scaleSize CompressRate:(CGFloat)compressRate Completion:(void (^)(UIImage * image))completion;
 
 
+
 /**
  选取多张照片
 
  @param size 目标尺寸 返回图片大小的估值 返回的图片的实际尺寸会以此值作为参考  且不影响图片实际比例
+ @param limitCount 图片的最大选取数量
  @param completion 成功获取到图片后的回调
  */
 + (void)multiPhotosWithTargetSize:(CGSize)size LimitCount:(NSInteger)limitCount Completion:(void (^)(NSArray * imagesArray))completion;
