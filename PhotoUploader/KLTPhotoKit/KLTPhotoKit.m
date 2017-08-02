@@ -24,9 +24,10 @@
     [picker obtainSinglePhotoWithCompletion:completion];
 }
 
-+ (void)multiPhotosWithTargetSize:(CGSize)size Completion:(void (^)(NSArray * imagesArray))completion
++ (void)multiPhotosWithTargetSize:(CGSize)size LimitCount:(NSInteger)limitCount Completion:(void (^)(NSArray * imagesArray))completion
 {
     KLTAlbumPhotoList * al = [[KLTAlbumPhotoList alloc]init];
+    al.limitCount = limitCount;
     al.targetSize = size;
     [al setDidSelectImages:completion];
     KLTPhotoNavController * kvc = [[KLTPhotoNavController alloc]initWithRootViewController:al];

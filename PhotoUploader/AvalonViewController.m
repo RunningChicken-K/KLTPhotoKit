@@ -8,6 +8,12 @@
 
 #import "AvalonViewController.h"
 #import "KLTPhotoKit.h"
+
+/**
+ 使用字典或数组生成Json字符串
+ */
+#define JsonWtihObject(obj) [[NSString alloc]initWithData:[NSJSONSerialization dataWithJSONObject:obj options:NSJSONWritingPrettyPrinted error:nil] encoding:NSUTF8StringEncoding]
+
 @interface AvalonViewController ()
 @property(nonatomic,strong)UIScrollView * baseScrollView;
 
@@ -47,27 +53,27 @@
     [alert addAction:[UIAlertAction actionWithTitle:@"多图" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
         
         
-        [KLTPhotoKit multiPhotosWithTargetSize:CGSizeMake(100, 100) Completion:^(NSArray *imagesArray) {
+        [KLTPhotoKit multiPhotosWithTargetSize:CGSizeMake(400, 400) LimitCount:3  Completion:^(NSArray *imagesArray) {
             
             //NSLog(@"imageArray is %@",imagesArray);
             
-            NSMutableDictionary * imgDict = [[NSMutableDictionary alloc]init];
-            
-            NSInteger i = 1;
-            for (UIImage * image in imagesArray) {
-                [imgDict setValue:image forKey:[NSString stringWithFormat:@"pic%ld",(long)i]];
-                i ++;
-            }
-            //NSLog(@"%@",imgDict);
-            [KLTPhotoKit uploadImages:imgDict Url:@"http://192.168.199.112/index.php?m=Coshow&a=addInfo" Parameters:@{@"userid":@"101",@"content":@"aaa",@"pics":imgDict.allValues} Progress:^(CGFloat progress) {
-                NSLog(@"进度 %f",progress);
-            } Completion:^(NSData *data, NSError *error) {
-                NSLog(@"%@",[NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingMutableContainers error:nil]);
-            }];
-            
-            for (UIView * view in self.baseScrollView.subviews) {
-                [view removeFromSuperview];
-            }
+//            NSMutableDictionary * imgDict = [[NSMutableDictionary alloc]init];
+//            
+//            NSInteger i = 1;
+//            for (UIImage * image in imagesArray) {
+//                [imgDict setValue:image forKey:[NSString stringWithFormat:@"pic%ld",(long)i]];
+//                i ++;
+//            }
+//            //NSLog(@"%@",imgDict);
+//            [KLTPhotoKit uploadImages:imgDict Url:@"http://192.168.199.112/index.php?m=Coshow&a=addInfo" Parameters:@{@"userid":@"101",@"content":@"aaa",@"pics":JsonWtihObject(imgDict.allKeys),@"array":@[@1,@2,@3,@4]} Progress:^(CGFloat progress) {
+//                NSLog(@"进度 %f",progress);
+//            } Completion:^(NSData *data, NSError *error) {
+//                NSLog(@"%@",[NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingMutableContainers error:nil]);
+//            }];
+//            
+//            for (UIView * view in self.baseScrollView.subviews) {
+//                [view removeFromSuperview];
+//            }
             
             
             [self RefreshUI:imagesArray];

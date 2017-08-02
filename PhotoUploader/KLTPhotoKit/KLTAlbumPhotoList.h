@@ -23,4 +23,10 @@
  */
 @property(nonatomic,assign)CGSize  targetSize;
 
+
+/**
+ 设置最大图片数量
+ */
+@property(nonatomic,assign)NSInteger limitCount;
+
 @end

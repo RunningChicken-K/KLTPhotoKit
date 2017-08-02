@@ -11,6 +11,7 @@
 #import "KLTAssetCell.h"
 #import "KLTAsset.h"
 #import "KLTImageBrowserController.h"
+#import "KLTTextHUD.h"
 
 static CGFloat BottomViewHieght = 40;
 
@@ -337,6 +338,14 @@ static CGFloat BottomViewHieght = 40;
 
 - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath
 {
+
+    if (self.numberOfSelectAssets >= _limitCount) {
+        
+        [KLTTextHUD showWithText:[NSString stringWithFormat:@"最多选取%ld张图片",(long)_limitCount] InView:self.view];
+        
+        return;
+    }
+    
     KLTAsset * asset = self.assetsArray[indexPath.row];
     asset.selected  = !asset.selected;
     if (!asset.selected) {

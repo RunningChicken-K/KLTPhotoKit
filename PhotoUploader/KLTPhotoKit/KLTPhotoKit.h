@@ -32,7 +32,7 @@
  @param size 目标尺寸 返回图片大小的估值 返回的图片的实际尺寸会以此值作为参考  且不影响图片实际比例
  @param completion 成功获取到图片后的回调
  */
-+ (void)multiPhotosWithTargetSize:(CGSize)size Completion:(void (^)(NSArray * imagesArray))completion;
++ (void)multiPhotosWithTargetSize:(CGSize)size LimitCount:(NSInteger)limitCount Completion:(void (^)(NSArray * imagesArray))completion;
 
 
 

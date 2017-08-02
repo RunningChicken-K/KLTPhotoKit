@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		534028A31F319D7300B37EAF /* KLTTextHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 534028A21F319D7300B37EAF /* KLTTextHUD.m */; };
 		53AEBB451F297E4700B81D16 /* AvalonViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 53AEBB441F297E4700B81D16 /* AvalonViewController.m */; };
 		53AEBB481F29866600B81D16 /* NavViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 53AEBB471F29866600B81D16 /* NavViewController.m */; };
 		53AEBB791F29C1A500B81D16 /* coloradjust_selected.png in Resources */ = {isa = PBXBuildFile; fileRef = 53AEBB4A1F29C1A500B81D16 /* coloradjust_selected.png */; };
@@ -52,6 +53,8 @@
 
 /* Begin PBXFileReference section */
 		3BF3E077091B97766C8FA9D3 /* Pods-PhotoUploader.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PhotoUploader.release.xcconfig"; path = "Pods/Target Support Files/Pods-PhotoUploader/Pods-PhotoUploader.release.xcconfig"; sourceTree = "<group>"; };
+		534028A11F319D7300B37EAF /* KLTTextHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KLTTextHUD.h; sourceTree = "<group>"; };
+		534028A21F319D7300B37EAF /* KLTTextHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KLTTextHUD.m; sourceTree = "<group>"; };
 		5348216A673D1D93E2A5942A /* libPods-PhotoUploader.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-PhotoUploader.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		53AEBB431F297E4700B81D16 /* AvalonViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AvalonViewController.h; sourceTree = "<group>"; };
 		53AEBB441F297E4700B81D16 /* AvalonViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AvalonViewController.m; sourceTree = "<group>"; };
@@ -172,6 +175,8 @@
 				53AEBB761F29C1A500B81D16 /* KLTUPLoadMaskView.m */,
 				53AEBB771F29C1A500B81D16 /* UIImageView+KLTUPLoad.h */,
 				53AEBB781F29C1A500B81D16 /* UIImageView+KLTUPLoad.m */,
+				534028A11F319D7300B37EAF /* KLTTextHUD.h */,
+				534028A21F319D7300B37EAF /* KLTTextHUD.m */,
 			);
 			path = KLTPhotoKit;
 			sourceTree = "<group>";
@@ -365,6 +370,7 @@
 				6A55A4411E9CD39D00D8CF31 /* NSArray+Log.m in Sources */,
 				53AEBB951F29C1A500B81D16 /* UIImageView+KLTUPLoad.m in Sources */,
 				6AC5B3591E8E03F000E8DCC1 /* AppDelegate.m in Sources */,
+				534028A31F319D7300B37EAF /* KLTTextHUD.m in Sources */,
 				53AEBB481F29866600B81D16 /* NavViewController.m in Sources */,
 				53AEBB8F1F29C1A500B81D16 /* KLTPhotoKit.m in Sources */,
 				53AEBB8A1F29C1A500B81D16 /* KLTEditImageViewController.m in Sources */,
