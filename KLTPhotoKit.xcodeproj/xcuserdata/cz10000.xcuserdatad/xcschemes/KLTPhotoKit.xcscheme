@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "6AC5B3501E8E03F000E8DCC1"
-               BuildableName = "PhotoUploader.app"
-               BlueprintName = "PhotoUploader"
-               ReferencedContainer = "container:PhotoUploader.xcodeproj">
+               BuildableName = "KLTPhotoKit.app"
+               BlueprintName = "KLTPhotoKit"
+               ReferencedContainer = "container:KLTPhotoKit.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -33,9 +33,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "6AC5B3501E8E03F000E8DCC1"
-            BuildableName = "PhotoUploader.app"
-            BlueprintName = "PhotoUploader"
-            ReferencedContainer = "container:PhotoUploader.xcodeproj">
+            BuildableName = "KLTPhotoKit.app"
+            BlueprintName = "KLTPhotoKit"
+            ReferencedContainer = "container:KLTPhotoKit.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -56,9 +56,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "6AC5B3501E8E03F000E8DCC1"
-            BuildableName = "PhotoUploader.app"
-            BlueprintName = "PhotoUploader"
-            ReferencedContainer = "container:PhotoUploader.xcodeproj">
+            BuildableName = "KLTPhotoKit.app"
+            BlueprintName = "KLTPhotoKit"
+            ReferencedContainer = "container:KLTPhotoKit.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -75,9 +75,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "6AC5B3501E8E03F000E8DCC1"
-            BuildableName = "PhotoUploader.app"
-            BlueprintName = "PhotoUploader"
-            ReferencedContainer = "container:PhotoUploader.xcodeproj">
+            BuildableName = "KLTPhotoKit.app"
+            BlueprintName = "KLTPhotoKit"
+            ReferencedContainer = "container:KLTPhotoKit.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>
