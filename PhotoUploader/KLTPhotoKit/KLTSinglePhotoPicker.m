@@ -200,28 +200,34 @@
 }
 
 /**
- 将图片强制拉伸为给定尺寸的缩略图
+ 保证图片比例不变的情况下 将图片拉伸为给定尺寸的缩略图
  */
 
-- (UIImage *)thumbnailWithImageWithoutScale:(UIImage *)image size:(CGSize)asize
+- (UIImage *)thumbnailWithImageWithoutScale:(UIImage *)image size:(CGSize)newSize
 {
     UIImage *newimage;
     if (nil == image) {
         newimage = nil;
     }
     else{
+        CGSize oldsize = image.size;
         CGRect rect;
-        //原图高<宽
-        rect.size.width = asize.width;
-        rect.size.height = asize.height;
-        rect.origin.x = 0;
-        rect.origin.y = (asize.height - rect.size.height)/2;
-        
-        UIGraphicsBeginImageContext(asize);
+        if (newSize.width/oldsize.width > newSize.height/oldsize.height) {
+            rect.size.width = oldsize.width*(newSize.height/oldsize.height);
+            rect.size.height = newSize.height;
+            rect.origin.x = 0;
+            rect.origin.y = 0;
+        }
+        else{
+            rect.size.width = newSize.width;
+            rect.size.height = oldsize.height*(newSize.width/oldsize.width);
+            rect.origin.x = 0;
+            rect.origin.y = 0;
+        }
+        UIGraphicsBeginImageContext(rect.size);
         CGContextRef context = UIGraphicsGetCurrentContext();
         CGContextSetFillColorWithColor(context, [[UIColor clearColor] CGColor]);
-        
-        UIRectFill(CGRectMake(0, 0, asize.width, asize.height));//clear background
+        UIRectFill(CGRectMake(0, 0, rect.size.width, rect.size.height));//clear background
         [image drawInRect:rect];
         newimage = UIGraphicsGetImageFromCurrentImageContext();
         UIGraphicsEndImageContext();
